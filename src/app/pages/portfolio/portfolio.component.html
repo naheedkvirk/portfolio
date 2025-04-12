@@ -1,0 +1,25 @@
+<section class="portfolio-section">
+    <h2 class="section-title">Portfolio</h2>
+    <p class="section-tagline">
+      Selected Works: UI/UX solutions designed for impact, usability, and scalability.
+    </p>
+  
+    <div class="project-list">
+      <mat-card class="project-card" *ngFor="let project of portfolioProjects">
+        <mat-card-title>{{ project.title }}</mat-card-title>
+        <mat-card-subtitle>{{ project.role }}</mat-card-subtitle>
+        <mat-card-content>
+          <p><strong>Stack:</strong> {{ project.stack }}</p>
+          <ul>
+            <li *ngFor="let highlight of project.highlights">
+              {{ highlight }}
+            </li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <app-post-table></app-post-table>
+  </section>
+
+  

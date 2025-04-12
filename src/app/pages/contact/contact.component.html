@@ -1,0 +1,34 @@
+<section class="contact-section">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-tagline">I'd love to hear from you. Let's get in touch.</p>
+  
+    <mat-card class="contact-card">
+      <mat-card-content>
+        <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+          <!-- Name Field -->
+          <mat-form-field appearance="fill" class="form-field">
+            <mat-label>Name</mat-label>
+            <input matInput type="text" name="name" [(ngModel)]="contactInfo.name" required />
+          </mat-form-field>
+  
+          <!-- Email Field -->
+          <mat-form-field appearance="fill" class="form-field">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" name="email" [(ngModel)]="contactInfo.email" required />
+          </mat-form-field>
+  
+          <!-- Message Field -->
+          <mat-form-field appearance="fill" class="form-field">
+            <mat-label>Message</mat-label>
+            <textarea matInput name="message" [(ngModel)]="contactInfo.message" required></textarea>
+          </mat-form-field>
+  
+          <!-- Submit Button -->
+          <button mat-raised-button color="primary" type="submit" [disabled]="!contactForm.form.valid">
+            Send Message
+          </button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </section>
+  
