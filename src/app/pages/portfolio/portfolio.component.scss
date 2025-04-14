@@ -17,13 +17,18 @@
     }
   
     .project-list {
-      display: grid;
+      /* display: grid;
+      gap: 2rem; */
+      display: flex;
       gap: 2rem;
+      flex-wrap: wrap; /* Optional: wrap to next line on small screens */
+
     }
   
     .project-card {
       text-align: left;
       padding: 1rem;
+      width: 450px; /* Or whatever width you want */
   
       mat-card-title {
         font-size: 1.5rem;
@@ -52,6 +57,9 @@
           }
         }
       }
+    }
+    .table-section {
+      margin-right: 4rem;
     }
   }
   

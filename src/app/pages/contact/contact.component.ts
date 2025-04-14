@@ -23,6 +23,6 @@ export class ContactComponent {
 
   onSubmit() {
     console.log('Form Submitted:', this.contactInfo);
-    // Implement form submission logic (e.g., send to server)
+    // ToDo: Implement form submission logic (send to server)
   }
 }

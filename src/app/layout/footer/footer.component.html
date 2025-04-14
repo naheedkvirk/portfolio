@@ -4,10 +4,14 @@
 
   <footer class="footer">
     <div class="footer-content">
-      <p>&copy; {{ currentYear }} {{ authorName }} {{ rightReserved }}</p>
-      <!-- <p>
-        Made with ❤️ by Naheed Virk
-      </p> -->
+      <p>Copyright &copy; {{ currentYear }} :: {{ authorName }} :: {{ rightReserved }}</p>
+      <!-- <a [href]="linkedinUrl" title="LinkedIn" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="/InBug-Black.png" alt="LinkedIn" class="social-icon">
+      </a> -->
+      <a [href]="linkedinUrl" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <img src="linkedin.png" alt="LinkedIn" class="social-icon" />
+      </a>
+      
     </div>
   </footer>
   

@@ -11,7 +11,7 @@
         <mat-card-content>
           <p><strong>Stack:</strong> {{ project.stack }}</p>
           <ul>
-            <li *ngFor="let highlight of project.highlights">
+            <li *ngFor="let highlight of project.highlights" [innerHTML]="highlight">
               {{ highlight }}
             </li>
           </ul>

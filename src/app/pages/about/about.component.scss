@@ -1,24 +1,55 @@
-.about-card {
-    max-width: 800px;
-    margin: 3rem auto;
+.about-section {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-tagline {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+
+  .about-card {
+    text-align: left;
     padding: 1rem;
-  
+
     mat-card-title {
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 600;
     }
-  
+
     mat-card-subtitle {
-      font-size: 1.1rem;
-      color: #666;
-      margin-top: 0.5rem;
-    }
-  
-    mat-card-content p {
       font-size: 1rem;
-      line-height: 1.7;
-      margin-bottom: 1rem;
-      color: #333;
+      color: #757575;
+      margin-bottom: 0.5rem;
+    }
+
+    mat-card-content {
+      p {
+        font-weight: 500;
+        margin: 0.5rem 0;
+        text-align: center;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+        list-style: disc;
+        color: #333;
+       
+        li {
+          margin-bottom: 0.3rem;
+          padding-bottom: 10px;
+        }
+      }
     }
   }
-  
+
+
+}

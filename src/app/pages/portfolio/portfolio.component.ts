@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { PostTableComponent } from '../post-table/post-table.component';
@@ -13,6 +14,16 @@ import { PostTableComponent } from '../post-table/post-table.component';
 })
 export class PortfolioComponent {
   portfolioProjects = [
+    {
+      title: 'Angular Features',
+      role: 'UI/UX Developer & Front-End Architect',
+      stack: 'Angular + Angular Material, SCSS, Rest API, HttpClient.',
+      highlights: [
+        'Fetches data from a <b><a href="/posts" class="bold-link">JSON API</a></b> using a service.',
+        'Renders data in Material Table (mat-table)',
+        'Material table extends with <b>Pagination</b>(Top, Bottom), <b>Sorting and Filtering.</b>',
+      ],
+    },
     {
       title: 'Design System for Enterprise Dashboard',
       role: 'UI/UX Developer & Front-End Architect',

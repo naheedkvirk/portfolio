@@ -1,7 +1,22 @@
-<mat-card id="home" class="home-card">
-    <h1>Introduction</h1>
-    <h2>Hi, I'm {{ authorName }}</h2>
-    <p>{{ authorInfo }}</p>
-    <button mat-raised-button color="accent" routerLink="./pages/portfolio">View My Work</button>
-</mat-card>
-  
+<section class="home-section">
+    <h2 class="section-title">
+        {{ authorName }}
+        <span>{{ fromWhere }} </span>
+    </h2>
+    <p class="section-tagline">
+        {{ authorInfo }}   
+    </p>
+    
+    <mat-card id="home" class="home-card">
+        <mat-card-content>
+            <p>{{ detailedInfo }}</p>
+            <p><b>{{ workSamples }}</b></p> 
+        </mat-card-content>
+    
+        <div class="button-wrapper">
+            <button mat-raised-button color="primary" [routerLink]="'/posts'">
+            Angular using Material
+            </button>
+        </div>
+    </mat-card>
+  </section>

@@ -1,15 +1,21 @@
 import { Component,} from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
+import { PortfolioComponent } from '../portfolio/portfolio.component';
+import { MatButtonModule } from '@angular/material/button';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [MatCardModule],
+  imports: [MatCardModule, MatButtonModule, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
-  standalone: true
+  standalone: true,
 })
 export class HomeComponent {
   authorName = 'Naheed Virk';
-  authorInfo = 'UI/UX Developer passionate about beautiful and functional design.';
+  fromWhere = '- from Michigan';
+  workSamples = 'Some of my Work Samples';
+  authorInfo = 'Front-End Engineer, UI/UX Developer, Full-Stack Developer'; 
+  detailedInfo = 'Passionate about beautiful and functional design.';
 
 }

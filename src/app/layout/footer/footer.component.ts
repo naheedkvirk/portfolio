@@ -10,6 +10,7 @@ import { Component, Input } from '@angular/core';
 export class FooterComponent {
   @Input() authorName: string = '';
   currentYear = new Date().getFullYear();
-  rightReserved = 'All rights reserved.';
+  rightReserved = 'All rights Reserved';
+  linkedinUrl: string = 'https://www.linkedin.com/in/naheed-virk';
 
 }
