@@ -14,6 +14,7 @@ export const routes: Routes = [
     { path: 'portfolio', component: PortfolioComponent },
     { path: 'resume', component: ResumeComponent },
     { path: 'contact', component: ContactComponent },
-    { path: 'posts', component: PostTableComponent},
+    //{ path: 'posts', component: PostTableComponent},
+    { path: 'json-api', component: PostTableComponent},
 
 ];

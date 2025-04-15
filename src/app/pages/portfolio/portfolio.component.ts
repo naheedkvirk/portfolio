@@ -19,7 +19,7 @@ export class PortfolioComponent {
       role: 'UI/UX Developer & Front-End Architect',
       stack: 'Angular + Angular Material, SCSS, Rest API, HttpClient.',
       highlights: [
-        'Fetches data from a <b><a href="/posts" class="bold-link">JSON API</a></b> using a service.',
+        'Fetches data from a <b><a href="/json-api" class="bold-link">JSON API</a></b> using a service.',
         'Renders data in Material Table (mat-table)',
         'Material table extends with <b>Pagination</b>(Top, Bottom), <b>Sorting and Filtering.</b>',
       ],
