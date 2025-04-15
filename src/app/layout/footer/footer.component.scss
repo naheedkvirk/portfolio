@@ -1,13 +1,13 @@
 /* src/app/layout/footer/footer.component.scss */
 
   .footer {
-    background-color: #545252; //#10284a;
+    background-color: #f5f5f5; //#10284a;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     height: 40px;
-    color: #ccc;
+    color: #757575;
     text-align: center;
     padding: 1rem 0;
     font-size: 0.9rem;
@@ -22,8 +22,8 @@
       p {
         margin: 0;
       }
-      a {
-        //border: 1px solid #33bb88;
+      .green {
+        color: #51D1D2;
       }
       .social-icon {
         width: 24px;
