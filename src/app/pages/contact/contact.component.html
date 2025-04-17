@@ -27,6 +27,10 @@
           <button mat-raised-button color="primary" type="submit" [disabled]="!contactForm.form.valid">
             Send Message
           </button>
+
+          <p class="success" *ngIf="successMessage">{{ successMessage}}</p>
+          <p class="error" *ngIf="errorMessage">{{ errorMessage}}</p>
+
         </form>
       </mat-card-content>
     </mat-card>
