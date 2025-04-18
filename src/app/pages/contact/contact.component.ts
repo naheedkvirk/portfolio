@@ -41,7 +41,10 @@ export class ContactComponent {
     
     // Proceed with form submission
     //this.http.post('/api/send-email', this.contactInfo).subscribe({
-      this.http.post('http://localhost:3000/api/send-email', this.contactInfo).subscribe({
+      //this.http.post('http://localhost:3000/api/send-email', this.contactInfo).subscribe({
+
+    //This ensures the request goes directly to the Node.js server running on port 3000
+    this.http.post('http://3.133.150.108:3000/api/send-email', this.contactInfo).subscribe({
       next: () => {
         
         alert ('Message sent successfully');    
