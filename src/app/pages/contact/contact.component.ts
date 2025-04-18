@@ -36,20 +36,23 @@ export class ContactComponent {
   onSubmit() {
     console.log('Form Submitted:', this.contactInfo);
 
-    // TODO: Implement form submission logic (send to server)
-    this.http.post('/api/send-email', this.contactInfo).subscribe({
+
+    // TODO: Fix the server issue
+    
+    // Proceed with form submission
+    //this.http.post('/api/send-email', this.contactInfo).subscribe({
+      this.http.post('http://localhost:3000/api/send-email', this.contactInfo).subscribe({
       next: () => {
-        /* this.successMessage = 'Message sent successfully';
-        this.errorMessage = '';
-        this.contactInfo = { name: '', email: '', message: ''}; */
-        alert ('Message sent successfully');
+        
+        alert ('Message sent successfully');    
+        console.log('Email sent successfully:', this.contactInfo);
+        this.contactInfo = { name: '', email: '', message: ''};
       },
       error: (err) => {
         console.log('Email send error:', err);
-        /* this.errorMessage = 'Failed to send message.';
-        this.successMessage = ''; */
         alert ('Failed to send Message.');
       },
     });
   }
+  
 }

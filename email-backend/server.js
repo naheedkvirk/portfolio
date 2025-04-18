@@ -6,10 +6,12 @@ const cors = require('cors');
 const app = express();
 const PORT = 3000;
 
-app.use(cors());
+// Middleware setup
+app.use(cors());  // Enable CORS for all origins
 app.use(bodyParser.json());
 
-// Setup nodemailer
+
+// Nodemailer transporter setup
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -18,12 +20,10 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
-
 // Endpoint to send email
 app.post('/api/send-email', async (req, res) => {
+  console.log('Request received:', req.body);  // Logs the request body
+
   const { name, email, message } = req.body;
 
   const mailOptions = {
@@ -35,6 +35,7 @@ app.post('/api/send-email', async (req, res) => {
 
   try {
     await transporter.sendMail(mailOptions);
+    console.log('Email sent successfully');
     res.status(200).send({ message: 'Email sent successfully!' });
   } catch (error) {
     console.error('Email send error:', error);
@@ -42,5 +43,16 @@ app.post('/api/send-email', async (req, res) => {
   }
 });
 
-
+//Start the server
+/*
+'0.0.0.0': This binds the server to all network interfaces on the machine, making it accessible from external IPs. It allows requests from any device that can reach your server, which is typically needed when running the server in a production environment.
+PORT: The port number you're using (3000 in your case).
+() => { console.log(...) }: This is a callback function that will log a message once the server is up and running.
+*/
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on http://0.0.0.0:${PORT}`);
+});
+/* app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+}); */
 
