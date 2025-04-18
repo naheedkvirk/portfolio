@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>Select Your Drink</h2>
+<mat-dialog-content>
+  <mat-radio-group [(ngModel)]="selectedDrink">
+    <mat-radio-button *ngFor="let drink of data.drinks" [value]="drink">
+      {{ drink }}
+    </mat-radio-button>
+  </mat-radio-group>
+    
+  <!-- ✅ Debug helper -->
+    <p style="margin-top: 16px; font-style: italic;">
+        Selected Drink: {{ selectedDrink }}
+    </p>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="dialogRef.close()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="submit()">Submit</button>
+</mat-dialog-actions>
