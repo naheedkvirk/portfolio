@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
@@ -15,8 +17,12 @@ app.use(bodyParser.json());
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'naheed.virk@gmail.com',
-    pass: 'uiyjqyvovmubluie' // From Gmail App Passwords
+    /* user: 'naheed.virk@gmail.com',
+    pass: 'uiyjqyvovmubluie' // From Gmail App Passwords */
+
+    //user,pass is defined in .env file
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS 
   }
 });
 

@@ -5,6 +5,7 @@
 /tmp
 /out-tsc
 /bazel-out
+/email-backend/node_modules
 
 # Node
 /node_modules
@@ -19,6 +20,7 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
+*.env
 
 # Visual Studio Code
 .vscode/*
