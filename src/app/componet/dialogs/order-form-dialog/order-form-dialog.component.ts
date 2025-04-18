@@ -31,6 +31,6 @@ export class OrderFormDialogComponent {
 
   submit(): void {
     console.log('Selected Drink: ', this.selectedDrink);
-    this.dialogRef.close(this.selectedDrink); //Sends data back to parent
+    this.dialogRef.close(this.selectedDrink); // Close the dialog and send the selected drink back to the parent
   }
 }

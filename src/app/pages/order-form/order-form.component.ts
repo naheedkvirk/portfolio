@@ -26,7 +26,7 @@ export class OrderFormComponent {
     /*
     // following just opens the dialog in orderformdialogcomponent
      this.dialog.open(OrderFormDialogComponent, {
-      data: { drinks: this.drinks } //// Pass the drinks array to the dialog
+      data: { drinks: this.drinks } // Pass the drinks array to the dialog
     }); 
     */
 
