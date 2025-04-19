@@ -6,6 +6,7 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { PostTableComponent } from './pages/post-table/post-table.component';
 import { OrderFormComponent } from './pages/order-form/order-form.component';
+import { FeaturesComponent } from './pages/features/features.component';
 
 export const routes: Routes = [
 // export const appRoutes: Routes = [
@@ -15,7 +16,8 @@ export const routes: Routes = [
     { path: 'portfolio', component: PortfolioComponent },
     { path: 'resume', component: ResumeComponent },
     { path: 'contact', component: ContactComponent },
-    { path: 'json-api', component: PostTableComponent},
-    { path: 'order-form', component: OrderFormComponent}
+    { path: 'json-api', component: PostTableComponent },
+    { path: 'order-form', component: OrderFormComponent}, 
+    { path: 'features', component: FeaturesComponent },
 
 ];

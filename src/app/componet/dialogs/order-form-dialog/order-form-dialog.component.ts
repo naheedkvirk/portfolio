@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { OrderFormComponent } from '../../../pages/order-form/order-form.component';
+import { FeaturesComponent } from '../../../pages/features/features.component';
 
 @Component({
   selector: 'app-order-form-dialog',

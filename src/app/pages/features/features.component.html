@@ -1,0 +1,27 @@
+<section class="feature-section">
+    <h2 class="section-title">
+        Angular Material Features
+    </h2>
+    <p class="section-tagline">
+        Some Material Features to showcase my work   
+    </p>
+    
+    <mat-card id="features" class="mat-card">
+        <!-- <div class="button-wrapper">
+            <button mat-raised-button color="primary" [routerLink]="'/order-form'">
+            Order a Drink
+            </button>
+        </div> -->
+
+        <div class="order-form-row">
+            <button mat-raised-button color="primary" (click)="openDialog()">
+                Order a Drink
+            </button>
+
+            <button mat-raised-button color="primary" [routerLink]="'/json-api'">
+                JSON API Data
+            </button>
+        </div>
+
+    </mat-card>
+  </section>
