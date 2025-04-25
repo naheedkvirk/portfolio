@@ -5,7 +5,8 @@
         </a>
     </span>
 
-    <nav class="mat-links">
+    <span class="spacer"></span>
+    <nav class="ng-features">
         <a mat-button class="mdc-button" routerLink="/features" routerLinkActive="active" aria-label="Angular Material">
             <img src="ng-logo.jpeg" alt="buttonicon" class="ng-logo"/> 
             <span class="logo-label">Material</span>
@@ -14,6 +15,12 @@
     <span class="spacer"></span>
 
     <nav class="nav-links">
+
+        <!-- <a mat-button class="mdc-button" routerLink="/features" routerLinkActive="active" aria-label="Angular Material">
+            <img src="ng-logo.jpeg" alt="buttonicon" class="ng-logo"/> 
+            <span class="logo-label">Material</span>
+        </a> -->
+        
         <a mat-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
         <a mat-button routerLink="/about" routerLinkActive="active">About</a>
         <a mat-button routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
