@@ -41,10 +41,10 @@ export class ContactComponent {
     
     // Proceed with form submission
     //this.http.post('/api/send-email', this.contactInfo).subscribe({
-      //this.http.post('http://localhost:3000/api/send-email', this.contactInfo).subscribe({
+    //this.http.post('http://localhost:4000/api/send-email', this.contactInfo).subscribe({
 
-    //This ensures the request goes directly to the Node.js server running on port 3000
-    this.http.post('http://3.133.150.108:3000/api/send-email', this.contactInfo).subscribe({
+    //This ensures the request goes directly to the Node.js server running on port 4000
+    /* this.http.post('http://3.133.150.108:4000/api/send-email', this.contactInfo).subscribe({
       next: () => {
         
         alert ('Message sent successfully');    
@@ -55,7 +55,34 @@ export class ContactComponent {
         console.log('Email send error:', err);
         alert ('Failed to send Message.');
       },
+    }); */
+
+    //Testing from http://localhost:4200/contact
+    /* this.http.post('http://localhost:4000/send-email', this.contactInfo).subscribe({
+      next: () => {
+        alert('Message sent successfully');
+        console.log('Email sent successfully:', this.contactInfo);
+        this.contactInfo = { name: '', email: '', message: '' };
+      },
+      error: (err) => {
+        console.log('Email send error:', err);
+        alert('Failed to send Message.');
+      },
+    }); */
+
+    //testing from public IP or server 
+    this.http.post('http://3.133.150.108:4000/send-email', this.contactInfo).subscribe({
+      next: () => {
+        alert('Message sent successfully');
+        console.log('Email sent successfully:', this.contactInfo);
+        this.contactInfo = { name: '', email: '', message: '' };
+      },
+      error: (err) => {
+        console.log('Email send error:', err);
+        alert('Failed to send Message.');
+      },
     });
+    
   }
   
 }

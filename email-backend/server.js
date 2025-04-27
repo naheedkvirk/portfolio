@@ -1,67 +1,55 @@
-require('dotenv').config();
-
-console.log("EMAIL_USER:", process.env.EMAIL_USER);
-console.log("EMAIL_PASS:", process.env.EMAIL_PASS ? "Loaded" : "Missing");
-
 const express = require('express');
 const nodemailer = require('nodemailer');
-const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-const PORT = 3000;
+const PORT = 4000;
 
-// Middleware setup
-app.use(cors());  // Enable CORS for all origins
-app.use(bodyParser.json());
+// Use CORS middleware
+app.use(cors()); // This allows all origins, adjust for tighter security if needed
 
+// Middleware to parse JSON bodies
+app.use(express.json());  // Make sure this is included
 
-// Nodemailer transporter setup
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'naheed.virk@gmail.com',
-    pass: 'fdtamqfumirdeymc' // From Gmail App Passwords
+// Serve the static files from the 'htdocs' directory
+app.use(express.static('/home/bitnami/htdocs', {
+  maxAge: 0 // Disable caching for testing, adjust for production
+}));
 
-    //user,pass is defined in .env file
-    // user: process.env.EMAIL_USER,
-    // pass: process.env.EMAIL_PASS 
-  }
-});
+// Simple POST endpoint to send email
+app.post('/send-email', async (req, res) => {
+  const { name, email, message } = req.body; // Destructure the body
 
-// Endpoint to send email
-app.post('/api/send-email', async (req, res) => {
-  console.log('Request received:', req.body);  // Logs the request body
+  // Check if required fields are present in the body
+/*   if (!name || !email || !message) {
+    return res.status(400).send({ message: 'Missing required fields' });
+  } */
 
-  const { name, email, message } = req.body;
+  // Set up nodemailer transport
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'naheed.virk@gmail.com',
+      pass: 'fdtamqfumirdeymc' // Ensure you are using a Gmail App password
+    }
+  });
 
   const mailOptions = {
     from: email,
     to: 'naheed.virk@gmail.com',
-    subject: `UI/UX Portfolio - New Message from ${name}`,
+    subject: `New message from ${name}`,
     text: message,
   };
 
   try {
     await transporter.sendMail(mailOptions);
-    console.log('Email sent successfully');
     res.status(200).send({ message: 'Email sent successfully!' });
   } catch (error) {
-    console.error('Email send error:', error);
     res.status(500).send({ message: 'Failed to send email.', error: error.message });
   }
 });
 
-//Start the server
-/*
-'0.0.0.0': This binds the server to all network interfaces on the machine, making it accessible from external IPs. It allows requests from any device that can reach your server, which is typically needed when running the server in a production environment.
-PORT: The port number you're using (3000 in your case).
-() => { console.log(...) }: This is a callback function that will log a message once the server is up and running.
-*/
+// Start the server
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on http://0.0.0.0:${PORT}`);
 });
-/* app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-}); */
-

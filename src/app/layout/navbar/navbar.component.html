@@ -1,27 +1,19 @@
 <mat-toolbar color="primary" class="navbar">
-    <span class="logo">
-        <a mat-button routerLink="/" routerLinkActive="active">
-            <img src="nv-logo.png" alt="LinkedIn" class="social-icon" />
-        </a>
-    </span>
-
-    <span class="spacer"></span>
-    <nav class="ng-features">
-        <a mat-button class="mdc-button" routerLink="/features" routerLinkActive="active" aria-label="Angular Material">
-            <img src="ng-logo.jpeg" alt="buttonicon" class="ng-logo"/> 
-            <span class="logo-label">Material</span>
+    <nav class="author">
+        <a class="nav-logo-link" mat-button routerLink="/" routerLinkActive="active">
+            <img class="nav-logo" src="nv-logo.png" alt="NameLogo" />
         </a>
     </nav>
+    <nav class="ng-material">
+        <a class="nav-logo-link" mat-button routerLink="/features" routerLinkActive="active" aria-label="Angular Material">
+            <img class="ng-logo" src="ng-logo.jpeg" alt="buttonicon" />
+            <span class="logo-label">Material</span>
+        </a>
+    </nav>   
     <span class="spacer"></span>
 
     <nav class="nav-links">
-
-        <!-- <a mat-button class="mdc-button" routerLink="/features" routerLinkActive="active" aria-label="Angular Material">
-            <img src="ng-logo.jpeg" alt="buttonicon" class="ng-logo"/> 
-            <span class="logo-label">Material</span>
-        </a> -->
-        
-        <a mat-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        <a class="home" mat-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
         <a mat-button routerLink="/about" routerLinkActive="active">About</a>
         <a mat-button routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
         <a mat-button routerLink="/resume" routerLinkActive="active">Resume</a>
