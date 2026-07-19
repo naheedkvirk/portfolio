@@ -1,43 +1,45 @@
+import Hero from "@/components/Hero";
+
 export default function Home() {
   return (
     <>
+      <Hero />
+    </>
+  );
+}
+
+/*
       <section
         id="home"
         className="scroll-mt-20 flex min-h-screen items-center justify-center"
       >
         <h1 className="text-5xl font-bold">Home</h1>
       </section>
-
       <section
         id="about"
         className="scroll-mt-20 flex min-h-screen items-center justify-center bg-gray-50 dark:bg-zinc-900"
       >
         <h2 className="text-4xl font-semibold">About</h2>
       </section>
-
       <section
         id="projects"
         className="scroll-mt-20 flex min-h-screen items-center justify-center"
       >
         <h2 className="text-4xl font-semibold">Projects</h2>
       </section>
-
       <section
         id="experience"
         className="scroll-mt-20 flex min-h-screen items-center justify-center bg-gray-50 dark:bg-zinc-900"
       >
         <h2 className="text-4xl font-semibold">Experience</h2>
       </section>
-
       <section
         id="contact"
         className="scroll-mt-20 flex min-h-screen items-center justify-center"
       >
         <h2 className="text-4xl font-semibold">Contact</h2>
       </section>
-    </>
-  );
-}
+      */
 
 /*
 export default function Home() {
