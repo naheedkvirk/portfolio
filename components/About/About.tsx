@@ -86,13 +86,14 @@ export default function About() {
           <div className="flex justify-center">
             <div
               className="relative h-64 w-64 overflow-hidden rounded-2xl 
-            border border-gray-200 shadow-xl md:h-72 md:w-72 dark:border-gray-800"
+            border border-gray-200 shadow-xl md:h-72 transition-shadow duration-300 hover:shadow-2xl md:w-72 dark:border-gray-800"
             >
               <Image
                 src="/images/profile/profile.jpg"
                 alt="Portrait of Naheed Virk"
                 fill
-                className="object-cover object-center transition-transform duration-500 hover:scale-105"
+                className="object-cover object-center transition-transform duration-500 
+                hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none"
                 sizes="(max-width: 768px) 80vw, 288px"
               />
             </div>
