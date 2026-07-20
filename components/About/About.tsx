@@ -33,32 +33,50 @@ export default function About() {
 
             <ul className="mt-8 space-y-4 text-gray-700 dark:text-gray-300">
               <li className="flex items-center gap-3 text-base">
-                <span className="h-2 w-2 rounded-full bg-blue-500" />
+                <span
+                  aria-hidden="true"
+                  className="h-2 w-2 rounded-full bg-blue-500"
+                />
                 React & Next.js
               </li>
 
               <li className="flex items-center gap-3 text-base">
-                <span className="h-2 w-2 rounded-full bg-blue-500" />
+                <span
+                  aria-hidden="true"
+                  className="h-2 w-2 rounded-full bg-blue-500"
+                />
                 TypeScript
               </li>
 
               <li className="flex items-center gap-3 text-base">
-                <span className="h-2 w-2 rounded-full bg-blue-500" />
+                <span
+                  aria-hidden="true"
+                  className="h-2 w-2 rounded-full bg-blue-500"
+                />
                 Tailwind CSS
               </li>
 
               <li className="flex items-center gap-3 text-base">
-                <span className="h-2 w-2 rounded-full bg-blue-500" />
+                <span
+                  aria-hidden="true"
+                  className="h-2 w-2 rounded-full bg-blue-500"
+                />
                 Accessibility (WCAG)
               </li>
 
               <li className="flex items-center gap-3 text-base">
-                <span className="h-2 w-2 rounded-full bg-blue-500" />
+                <span
+                  aria-hidden="true"
+                  className="h-2 w-2 rounded-full bg-blue-500"
+                />
                 Responsive Web Design
               </li>
 
               <li className="flex items-center gap-3 text-base">
-                <span className="h-2 w-2 rounded-full bg-blue-500" />
+                <span
+                  aria-hidden="true"
+                  className="h-2 w-2 rounded-full bg-blue-500"
+                />
                 Design Systems & Component Libraries
               </li>
             </ul>
@@ -72,7 +90,7 @@ export default function About() {
             >
               <Image
                 src="/images/profile/profile.jpg"
-                alt="Naheed Virk"
+                alt="Portrait of Naheed Virk"
                 fill
                 className="object-cover object-center transition-transform duration-500 hover:scale-105"
                 sizes="(max-width: 768px) 80vw, 288px"
