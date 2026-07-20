@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section
@@ -38,8 +40,14 @@ export default function About() {
 
           {/* Right Column */}
           <div className="flex justify-center">
-            <div className="flex h-80 w-80 items-center justify-center rounded-xl border-2 border-dashed">
-              Image Placeholder
+            <div className="relative h-64 w-64 overflow-hidden rounded-xl md:h-72 md:w-72">
+              <Image
+                src="/images/profile/profile.jpg"
+                alt="Naheed Virk"
+                fill
+                className="object-cover  object-center"
+                sizes="(max-width: 768px) 80vw, 288px"
+              />
             </div>
           </div>
         </div>
