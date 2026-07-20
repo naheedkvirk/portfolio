@@ -40,28 +40,28 @@ export default function Hero() {
           {/* Hero content will be added in Task 5 */}
           <motion.p
             variants={itemVariants}
-            className="text-sm font-medium tracking-wide text-teal-400 sm:text-base"
+            className="text-sm font-medium tracking-wide sm:text-base text-teal-600 dark:text-teal-400"
           >
             Hi, my name is
           </motion.p>
 
           <motion.h1
             variants={itemVariants}
-            className="mt-4 text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl"
+            className="mt-4 text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl text-slate-900 dark:text-slate-100"
           >
             Naheed Virk,
           </motion.h1>
 
           <motion.h2
             variants={itemVariants}
-            className="mt-4 text-3xl font-semibold text-gray-500 sm:text-4xl lg:text-5xl dark:text-gray-400"
+            className="mt-4 text-3xl font-semibold sm:text-4xl lg:text-5xl text-slate-600 dark:text-slate-400"
           >
             I build accessible, responsive web experiences.
           </motion.h2>
 
           <motion.p
             variants={itemVariants}
-            className="mt-6 max-w-xl text-base leading-8 text-gray-600 sm:text-lg dark:text-gray-300"
+            className="mt-6 max-w-xl text-base leading-8 sm:text-lg text-slate-600 dark:text-slate-300"
           >
             I&apos;m a Frontend UI Developer with 15+ years of experience
             building responsive, accessible, and scalable web applications. I
@@ -75,17 +75,18 @@ export default function Hero() {
           >
             <a
               href="#projects"
-              className="rounded-md bg-black px-6 py-3 text-white transition-colors 
-              duration-300 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+              className="rounded-md bg-teal-600 text-white px-6 py-3 transition-colors 
+              duration-300 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2
+              dark:bg-teal-500 dark:hover:bg-teal-600"
             >
               View My Work
             </a>
 
             <a
               href="#contact"
-              className="rounded-md border border-black px-6 py-3 text-black transition-colors duration-300 
+              className="rounded-md border border-slate-300 text-slate-900 px-6 py-3 text-black transition-colors duration-300 
               hover:bg-gray-100 hover:text-black focus:outline-none focus:ring-2 focus:ring-gray-500 
-              focus:ring-offset-2 dark:border-white dark:text-white dark:hover:bg-gray-800 dark:hover:text-white"
+              focus:ring-offset-2 dark:border-slate-700 dark:text-slate-100 dark:hover:bg-gray-800 dark:hover:text-white"
             >
               Contact Me
             </a>
