@@ -5,9 +5,9 @@ export default function About() {
     <section
       id="about"
       aria-labelledby="about-heading"
-      className="scroll-mt-24"
+      className="scroll-mt-24 bg-gray-50 dark:bg-gray-950"
     >
-      <div className="mx-auto max-w-7xl px-6 py-24">
+      <div className="mx-auto max-w-7xl px-6 py-32">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           {/* Left Column */}
           <div>
@@ -65,12 +65,12 @@ export default function About() {
 
           {/* Right Column */}
           <div className="flex justify-center">
-            <div className="relative h-64 w-64 overflow-hidden rounded-xl md:h-72 md:w-72">
+            <div className="relative h-64 w-64 overflow-hidden rounded-2xl shadow-xl md:h-72 md:w-72">
               <Image
                 src="/images/profile/profile.jpg"
                 alt="Naheed Virk"
                 fill
-                className="object-cover  object-center"
+                className="object-cover object-center"
                 sizes="(max-width: 768px) 80vw, 288px"
               />
             </div>
