@@ -16,7 +16,24 @@ export default function About() {
               About Me
             </h2>
 
-            <p className="mt-t">About section placeholder.</p>
+            <p className="mt-6 text-lg leading-8 text-gray-700 dark:text-gray-300">
+              I&apos;m a Front-End Developer who enjoys building accessible,
+              responsive, and high-performance web applications with modern
+              JavaScript technologies.
+            </p>
+            <p className="mt-4 leading-8 text-gray-700 dark:text-gray-300">
+              I specialize in React, Next.js, TypeScript, and modern CSS,
+              creating scalable user interfaces with a strong focus on
+              usability, performance, accessibility, and clean architecture.
+            </p>
+            <ul className="mt-8 space-y-3">
+              <li>React & Next.js</li>
+              <li>TypeScript</li>
+              <li>Tailwind CSS</li>
+              <li>Accessibility (WCAG)</li>
+              <li>Responsive Web Design</li>
+              <li>Design Systems & Component Libraries</li>
+            </ul>
           </div>
 
           {/* Right Column */}
