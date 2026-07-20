@@ -29,7 +29,10 @@ const itemVariants: Variants = {
 
 export default function Hero() {
   return (
-    <section id="home" className="flex min-h-screen items-center py-24">
+    <section
+      id="home"
+      className="flex min-h-screen items-center bg-gradient-to-br from-white via-slate-50 to-teal-50 py-24 dark:from-slate-950 dark:via-slate-900 dark:to-teal-950"
+    >
       <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
         <motion.div
           className="max-w-3exl"
@@ -75,18 +78,16 @@ export default function Hero() {
           >
             <a
               href="#projects"
-              className="rounded-md bg-teal-600 text-white px-6 py-3 transition-colors 
-              duration-300 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2
-              dark:bg-teal-500 dark:hover:bg-teal-600"
+              className="rounded-md bg-teal-600 px-6 py-3 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-teal-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 dark:focus:ring-offset-slate-950 
+              motion-reduce:transition-none motion-reduce:hover:translate-y-0"
             >
               View My Work
             </a>
 
             <a
               href="#contact"
-              className="rounded-md border border-slate-300 text-slate-900 px-6 py-3 text-black transition-colors duration-300 
-              hover:bg-gray-100 hover:text-black focus:outline-none focus:ring-2 focus:ring-gray-500 
-              focus:ring-offset-2 dark:border-slate-700 dark:text-slate-100 dark:hover:bg-gray-800 dark:hover:text-white"
+              className="rounded-md border border-slate-300 px-6 py-3 text-slate-900 transition-all duration-300 hover:-translate-y-1 hover:bg-slate-100 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 dark:border-slate-700 dark:text-slate-100 dark:hover:bg-slate-800 dark:focus:ring-offset-slate-950
+              motion-reduce:transition-none motion-reduce:hover:translate-y-0"
             >
               Contact Me
             </a>
