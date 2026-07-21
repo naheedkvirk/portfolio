@@ -68,7 +68,8 @@ export const projects: Project[] = [
       "Designed and developed a modern portfolio website showcasing projects, experience, and technical skills using Next.js and Tailwind CSS.",
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     image: "/images/projects/portfolio.png",
-    liveUrl: "#",
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com",
     featured: true,
   },
 ];
