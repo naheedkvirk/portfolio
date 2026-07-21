@@ -89,7 +89,7 @@ export default function About() {
             border border-gray-200 shadow-xl md:h-72 transition-shadow duration-300 hover:shadow-2xl md:w-72 dark:border-gray-800"
             >
               <Image
-                src="/images/profile/profile.jpg"
+                src="/images/profile/nv.jpg"
                 alt="Portrait of Naheed Virk"
                 fill
                 className="object-cover object-center transition-transform duration-500 

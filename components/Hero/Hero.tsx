@@ -78,8 +78,11 @@ export default function Hero() {
           >
             <a
               href="#projects"
-              className="rounded-md bg-teal-600 px-6 py-3 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-teal-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 dark:focus:ring-offset-slate-950 
-              motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+              className="rounded-md bg-teal-600 px-6 py-3 text-white transition-all duration-300 
+              hover:-translate-y-1 hover:bg-teal-700 hover:shadow-lg 
+              focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 
+              dark:focus:ring-offset-slate-950 motion-reduce:transition-none 
+              motion-reduce:hover:translate-y-0"
             >
               View My Work
             </a>
