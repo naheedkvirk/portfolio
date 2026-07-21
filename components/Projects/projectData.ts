@@ -21,7 +21,7 @@ export const projects: Project[] = [
     description:
       "Designed and developed a scalable enterprise design system with reusable React components, documentation, accessibility standards, and Storybook integration.",
     technologies: ["React", "Typescript", "Material UI", "Storybook", "Vite"],
-    image: "/images/projects/design-system.png",
+    image: "/images/projects/ds.jpg",
     featured: true,
   },
   {

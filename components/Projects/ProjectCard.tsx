@@ -12,13 +12,38 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article
-      className=" 
-        group overflow-hidden rounded-xl border border-slate-200
-        bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl
-        dark:border-slate-700
-        dark:bg-slate-800
+      className="
+    group
+    overflow-hidden
+    rounded-xl
+    border
+    border-slate-200
+    bg-white
+    shadow-md
+    transition-all
+    duration-300
+    hover:-translate-y-2
+    hover:shadow-xl
+
+    dark:border-slate-700
+    dark:bg-slate-800
+  "
+    >
+      <div className="relative h-56 overflow-hidden">
+        <Image
+          src={project.image}
+          alt={project.title}
+          fill
+          className="
+        object-cover
+        transition-transform
+        duration-300
+        group-hover:scale-105
       "
-    ></article>
+          sizes="(max-width: 768px) 100vw, 400px"
+        />
+      </div>
+    </article>
   );
 }
 
