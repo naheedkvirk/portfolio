@@ -13,24 +13,24 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article
       className="
-            group
-            overflow-hidden
-            rounded-xl
-            border
-            border-slate-200
-            bg-white
-            shadow-md
-            transition-all
-            duration-300
-            hover:-translate-y-2
-            hover:shadow-xl
+        group
+        overflow-hidden
+        rounded-2xl
+        border
+        border-gray-200
+        bg-white
+        shadow-sm
+        transition-all
+        duration-300
+        hover:-translate-y-2
+        hover:shadow-xl
 
-            dark:border-slate-700
-            dark:bg-slate-800
-        "
+        dark:border-gray-700
+        dark:bg-gray-800
+    "
     >
       {/* Image Section */}
-      <div className="relative h-56 overflow-hidden">
+      <div className="relative h-64 overflow-hidden">
         <Image
           src={project.image}
           alt={project.title}
@@ -38,10 +38,23 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           className="
         object-cover
         transition-transform
-        duration-300
-        group-hover:scale-105
+        duration-500
+        group-hover:scale-110
       "
-          sizes="(max-width: 768px) 100vw, 400px"
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+        <div
+          className="
+            absolute
+            inset-0
+            bg-gradient-to-t
+            from-black/30
+            via-transparent
+            opacity-0
+            transition-opacity
+            duration-300
+            group-hover:opacity-100
+            "
         />
       </div>
 
@@ -65,7 +78,18 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.technologies.map((technology) => (
             <span
               key={technology}
-              className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700 dark:bg-slate-700 dark:text-slate-200"
+              className="
+                rounded-full
+                bg-blue-50
+                px-3
+                py-1
+                text-xs
+                font-medium
+                text-blue-700
+
+                dark:bg-blue-900/30
+                dark:text-blue-300
+                "
             >
               {technology}
             </span>
