@@ -1,3 +1,7 @@
+/*
+    Section component
+*/
+
 export default function Projects() {
   return (
     <section
