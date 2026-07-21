@@ -1,6 +1,3 @@
-/*
-    Section component
-*/
 import ProjectCard from "./ProjectCard";
 import { projects } from "./projectData";
 
@@ -33,8 +30,8 @@ export default function Projects() {
         {/* Project Grid */}
         <div className="mt-16 grid gap-10 lg:grid-cols-3">
           {/* Project cards will go here */}
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+          {projects.map((project, index) => (
+            <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </div>
       </div>

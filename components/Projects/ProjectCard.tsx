@@ -1,37 +1,56 @@
 /*
     Reusable card
 */
+"use client";
+import { motion } from "motion/react";
 
 import Image from "next/image";
 import { Project } from "./projectData";
 
 interface ProjectCardProps {
   project: Project;
+  index: number;
 }
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+export default function ProjectCard({ project, index }: ProjectCardProps) {
   return (
-    <article
+    <motion.article
+      initial={{
+        opacity: 0,
+        y: 30,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+      }}
+      viewport={{
+        once: true,
+        amount: 0.2,
+      }}
+      transition={{
+        duration: 0.5,
+        delay: index * 0.1,
+      }}
+
       className={`
-    group
-    overflow-hidden
-    rounded-2xl
-    border
-    bg-white
-    shadow-sm
-    transition-all
-    duration-300
-    hover:-translate-y-2
-    hover:shadow-xl
+            group
+            overflow-hidden
+            rounded-2xl
+            border
+            bg-white
+            shadow-sm
+            transition-all
+            duration-300
+            hover:-translate-y-2
+            hover:shadow-xl
+            dark:bg-gray-800
 
-    dark:bg-gray-800
-
-    ${
-      project.featured
-        ? "border-blue-500 dark:border-blue-400"
-        : "border-gray-200 dark:border-gray-700"
-    }
-  `}
+            ${
+              project.featured
+                ? "border-blue-500 dark:border-blue-400"
+                : "border-gray-200 dark:border-gray-700"
+            }
+        `}
     >
       {/* Image Section */}
       <div className="relative h-64 overflow-hidden">
@@ -186,7 +205,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           )}
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 }
 

@@ -21,7 +21,7 @@ export const projects: Project[] = [
     description:
       "Designed and developed a scalable enterprise design system with reusable React components, documentation, accessibility standards, and Storybook integration.",
     technologies: ["React", "Typescript", "Material UI", "Storybook", "Vite"],
-    image: "/images/projects/ds.jpg",
+    image: "/images/projects/design.jpg",
     featured: true,
   },
   {
@@ -31,7 +31,7 @@ export const projects: Project[] = [
     description:
       "Built responsive enterprise applications focused on usability, accessibility, and maintainable frontend architecture for financial services workflows.",
     technologies: ["React", "Next.js", "TypeScript", "REST APIs", "Jest"],
-    image: "/images/projects/financial-platform.png",
+    image: "/images/projects/financial.jpg",
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     description:
       "Developed user-focused healthcare applications improving digital experiences through responsive interfaces and modern frontend practices.",
     technologies: ["React", "JavaScript", "HTML", "CSS", "Accessibility"],
-    image: "/images/projects/healthcare-portal.png",
+    image: "/images/projects/healthcare.jpg",
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     description:
       "Created scalable web solutions supporting automotive customer journeys with performance-focused frontend development.",
     technologies: ["React", "TypeScript", "Node.js", "Agile"],
-    image: "/images/projects/automotive-platform.png",
+    image: "/images/projects/automotive.jpg",
   },
   {
     id: 5,
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     description:
       "Contributed to building search-driven experiences that help users discover and interact with large-scale academic content.",
     technologies: ["React", "JavaScript", "APIs", "UI Development"],
-    image: "/images/projects/academic-platform.png",
+    image: "/images/projects/academic.jpg",
   },
   {
     id: 6,
@@ -67,7 +67,7 @@ export const projects: Project[] = [
     description:
       "Designed and developed a modern portfolio website showcasing projects, experience, and technical skills using Next.js and Tailwind CSS.",
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    image: "/images/projects/portfolio.png",
+    image: "/images/projects/portfolio.jpg",
     liveUrl: "https://example.com",
     githubUrl: "https://github.com",
     featured: true,
