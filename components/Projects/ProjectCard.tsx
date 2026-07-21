@@ -12,22 +12,26 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article
-      className="
-        group
-        overflow-hidden
-        rounded-2xl
-        border
-        border-gray-200
-        bg-white
-        shadow-sm
-        transition-all
-        duration-300
-        hover:-translate-y-2
-        hover:shadow-xl
+      className={`
+    group
+    overflow-hidden
+    rounded-2xl
+    border
+    bg-white
+    shadow-sm
+    transition-all
+    duration-300
+    hover:-translate-y-2
+    hover:shadow-xl
 
-        dark:border-gray-700
-        dark:bg-gray-800
-    "
+    dark:bg-gray-800
+
+    ${
+      project.featured
+        ? "border-blue-500 dark:border-blue-400"
+        : "border-gray-200 dark:border-gray-700"
+    }
+  `}
     >
       {/* Image Section */}
       <div className="relative h-64 overflow-hidden">
@@ -56,6 +60,26 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             group-hover:opacity-100
             "
         />
+
+        {project.featured && (
+          <div
+            className="
+                absolute
+                left-4
+                top-4
+                rounded-full
+                bg-blue-600
+                px-3
+                py-1
+                text-xs
+                font-semibold
+                text-white
+                shadow-md
+                "
+          >
+            Featured
+          </div>
+        )}
       </div>
 
       {/* Content Section */}
