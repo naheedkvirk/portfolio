@@ -1,4 +1,4 @@
-import { Experience } from "./ExperienceData";
+import { Experience } from "./experienceData";
 
 //Props
 interface ExperienceItemProps {
@@ -6,7 +6,7 @@ interface ExperienceItemProps {
 }
 export default function ExperienceItem({ experience }: ExperienceItemProps) {
   return (
-    <article>
+    <article className="relative pl-10">
       {/* Timeline dot */}
       <div className="absolute left-0 top-2 h-4 w-4 rounded-full bg-blue-600 ring-4 ring-blue-100 dark:ring-blue-900" />
 

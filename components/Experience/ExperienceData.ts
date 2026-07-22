@@ -10,7 +10,7 @@ export interface Experience {
   current?: boolean;
 }
 
-export const experience: Experience[] = [
+export const experiences: Experience[] = [
   {
     id: 1,
     company: "John Deere",
