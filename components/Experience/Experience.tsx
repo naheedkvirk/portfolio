@@ -9,4 +9,4 @@ export interface Experience {
   technologies: string[];
 }
 
-export const experience: Experience[] = [{}];
+export const experience: Experience[] = [];
