@@ -6,7 +6,7 @@ interface ExperienceItemProps {
 }
 export default function ExperienceItem({ experience }: ExperienceItemProps) {
   return (
-    <article className="relative pl-10">
+    <article className="relative pl-8 sm:pl-10">
       {/* Timeline line */}
       <div className="absolute left-[7px] top-6 bottom-0 z-0 w-px bg-gray-300 dark:bg-gray-700" />
 
@@ -27,7 +27,7 @@ export default function ExperienceItem({ experience }: ExperienceItemProps) {
         "
       />
 
-      <div className="pb-16">
+      <div className="pb-12 sm:pb-16">
         {/* Header */}
         <header>
           <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">
