@@ -5,9 +5,11 @@ export default function About() {
     <section
       id="about"
       aria-labelledby="about-heading"
-      className="scroll-mt-24 bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900"
+      className="scroll-mt-24 
+      py-12 sm:py-16 dark:bg-gray-900
+      bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900"
     >
-      <div className="mx-auto max-w-7xl px-6 py-32">
+      <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           {/* Left Column */}
           <div>

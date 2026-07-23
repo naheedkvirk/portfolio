@@ -20,9 +20,9 @@ export default function Experience() {
     <section
       id="experience"
       aria-labelledby="experience-heading"
-      className="scroll-mt-24 bg-gray-50 py-20 sm:py-24 lg:py-32 dark:bg-gray-900"
+      className="scroll-mt-24 bg-gray-50 py-12 sm:py-16 dark:bg-gray-900"
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6">
         {/* Section Header */}
         <motion.div
           className="max-w-3xl"

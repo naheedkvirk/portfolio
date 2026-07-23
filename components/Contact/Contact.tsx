@@ -11,9 +11,10 @@ export default function Contact() {
     <section
       id="contact"
       aria-labelledby="contact-heading"
-      className="scroll-mt-24 bg-white py-20 dark:bg-gray-950 sm:py-24 lg:py-32"
+      className="scroll-mt-24 bg-white 
+      py-12 sm:py-16 dark:bg-gray-950 "
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6">
         {/* Section Header */}
         <motion.div
           className="
@@ -23,7 +24,10 @@ export default function Contact() {
             border-gray-200
             bg-gray-50
             p-8
-            shadow-sm
+            shadow-md
+            transition-shadow
+            duration-300
+            hover:shadow-lg
             dark:border-gray-800
             dark:bg-gray-900
             sm:p-10
@@ -47,18 +51,21 @@ export default function Contact() {
 
           <div className="mt-3 h-1 w-20 rounded-full bg-blue-500" />
 
-          <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+          <p
+            className="mt-6 
+                max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-300"
+          >
             I&apos;m always interested in discussing new opportunities,
             interesting projects, and ways to create meaningful digital
             experiences.
           </p>
 
-          {/* Email Contact Links */}
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+          {/* Contact Links - Email, LinkedIn, Github */}
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
             <a
               href="mailto:naheed.virk@gmail.com"
               className="
-                 inline-flex
+                inline-flex
                 items-center
                 justify-center
                 rounded-md

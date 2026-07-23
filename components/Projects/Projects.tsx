@@ -6,9 +6,10 @@ export default function Projects() {
     <section
       id="projects"
       aria-labelledby="projects-heading"
-      className="scroll-mt-24 bg-white dark:bg-gray-900"
+      className="scroll-mt-24 bg-white 
+      py-16 sm:py-20 dark:bg-gray-900"
     >
-      <div className="mx-auto max-w-7xl px-6 py-32">
+      <div className="mx-auto max-w-7xl px-6">
         {/* Section Header */}
         <div className="max-w-3xl">
           <h2
