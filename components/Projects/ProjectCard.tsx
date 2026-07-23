@@ -123,15 +123,15 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               key={technology}
               className="
                 rounded-full
-                bg-blue-50
+                bg-teal-50
                 px-3
                 py-1
                 text-xs
                 font-medium
-                text-blue-700
+                text-teal-700
 
-                dark:bg-blue-900/30
-                dark:text-blue-300
+                dark:bg-teal-900/30
+                dark:text-teal-300
                 "
             >
               {technology}

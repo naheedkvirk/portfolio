@@ -55,7 +55,7 @@ export default function ExperienceItem({
             {experience.role}
           </h3>
 
-          <p className="mt-1 text-lg font-semibold text-blue-600 dark:text-blue-400">
+          <p className="mt-1 text-lg font-semibold text-teal-600 dark:text-teal-400">
             {experience.company}
           </p>
 
@@ -69,14 +69,14 @@ export default function ExperienceItem({
                 mt-3
                 inline-flex
                 rounded-full
-                bg-blue-100
+                bg-teal-100
                 px-3
                 py-1
                 text-xs
                 font-medium
-                text-blue-700
-                dark:bg-blue-900/40
-                dark:text-blue-300
+                text-teal-700
+                dark:bg-teal-900/40
+                dark:text-teal-300
               "
             >
               Current Role
@@ -101,7 +101,7 @@ export default function ExperienceItem({
           {experience.technologies.map((technology) => (
             <span
               key={technology}
-              className="rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700 dark:bg-blue-900/30 dark:text-blue-300"
+              className="rounded-full bg-teal-50 px-3 py-1 text-xs font-medium text-teal-700 dark:bg-teal-900/30 dark:text-teal-300"
             >
               {technology}
             </span>
