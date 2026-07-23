@@ -89,8 +89,36 @@ export default function Hero() {
 
             <a
               href="#contact"
-              className="rounded-md border border-slate-300 px-6 py-3 text-slate-900 transition-all duration-300 hover:-translate-y-1 hover:bg-slate-100 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 dark:border-slate-700 dark:text-slate-100 dark:hover:bg-slate-800 dark:focus:ring-offset-slate-950
-              motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+              className="
+                inline-flex
+                items-center
+                justify-center
+                rounded-md
+                border
+                border-gray-300
+                px-6
+                py-3
+                text-sm
+                font-semibold
+                text-gray-700
+                transition-all
+                duration-300
+                hover:-translate-y-1
+                hover:border-teal-600
+                hover:text-teal-600
+                hover:shadow-lg
+                focus:outline-none
+                focus:ring-2
+                focus:ring-teal-500
+                focus:ring-offset-2
+                dark:border-gray-700
+                dark:text-gray-300
+                dark:hover:border-teal-400
+                dark:hover:text-teal-400
+                dark:focus:ring-offset-gray-950
+                motion-reduce:transition-none
+                motion-reduce:hover:translate-y-0
+                "
             >
               Contact Me
             </a>

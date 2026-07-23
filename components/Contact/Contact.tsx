@@ -1,4 +1,10 @@
+"use client";
+import { motion, useReducedMotion } from "motion/react";
+
 export default function Contact() {
+  const prefersReducedMotion = useReducedMotion();
+  const shouldReduceMotion = prefersReducedMotion ?? false;
+
   return (
     <section
       id="contact"
@@ -7,7 +13,29 @@ export default function Contact() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="max-w-3xl">
+        <motion.div
+          className="
+            max-w-3xl
+            rounded-2xl
+            border
+            border-gray-200
+            bg-gray-50
+            p-8
+            shadow-sm
+            dark:border-gray-800
+            dark:bg-gray-900
+            sm:p-10
+        "
+          initial={shouldReduceMotion ? false : { opacity: 0, y: 32 }}
+          whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
+          viewport={{
+            once: true,
+            amount: 0.3,
+          }}
+          transition={{
+            duration: 0.6,
+          }}
+        >
           <h2
             id="contact-heading"
             className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl"
@@ -15,7 +43,7 @@ export default function Contact() {
             Get In Touch
           </h2>
 
-          <div className="mt-3 h-1 w-20 rounded-full bg-teal-500" />
+          <div className="mt-3 h-1 w-20 rounded-full bg-blue-500" />
 
           <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
             I&apos;m always interested in discussing new opportunities,
@@ -28,7 +56,7 @@ export default function Contact() {
             <a
               href="naheed.virk@gmail.com"
               className="
-                inline-flex
+                 inline-flex
                 items-center
                 justify-center
                 rounded-md
@@ -38,20 +66,25 @@ export default function Contact() {
                 text-sm
                 font-semibold
                 text-white
-                transition
+                transition-all
+                duration-300
+                hover:-translate-y-1
                 hover:bg-teal-700
+                hover:shadow-lg
                 focus:outline-none
                 focus:ring-2
                 focus:ring-teal-500
                 focus:ring-offset-2
                 dark:focus:ring-offset-gray-950
+                motion-reduce:transition-none
+                motion-reduce:hover:translate-y-0
                 "
             >
               Email Me
             </a>
 
             <a
-              href="https://www.linkedin.com/naheed-virk"
+              href="https://www.linkedin.com/in/naheed-virk/"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -66,13 +99,23 @@ export default function Contact() {
                 text-sm
                 font-semibold
                 text-gray-700
-                transition
+                transition-all
+                duration-300
+                hover:-translate-y-1
                 hover:border-teal-600
                 hover:text-teal-600
+                hover:shadow-lg
+                focus:outline-none
+                focus:ring-2
+                focus:ring-teal-500
+                focus:ring-offset-2
                 dark:border-gray-700
                 dark:text-gray-300
                 dark:hover:border-teal-400
                 dark:hover:text-teal-400
+                dark:focus:ring-offset-gray-950
+                motion-reduce:transition-none
+                motion-reduce:hover:translate-y-0
                 "
             >
               LinkedIn
@@ -94,19 +137,29 @@ export default function Contact() {
                 text-sm
                 font-semibold
                 text-gray-700
-                transition
+                transition-all
+                duration-300
+                hover:-translate-y-1
                 hover:border-teal-600
                 hover:text-teal-600
+                hover:shadow-lg
+                focus:outline-none
+                focus:ring-2
+                focus:ring-teal-500
+                focus:ring-offset-2
                 dark:border-gray-700
                 dark:text-gray-300
                 dark:hover:border-teal-400
                 dark:hover:text-teal-400
+                dark:focus:ring-offset-gray-950
+                motion-reduce:transition-none
+                motion-reduce:hover:translate-y-0
                 "
             >
               GitHub
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
