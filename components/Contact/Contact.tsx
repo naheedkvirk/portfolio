@@ -1,5 +1,7 @@
 "use client";
 import { motion, useReducedMotion } from "motion/react";
+//import { Mail } from "lucide-react";
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Contact() {
   const prefersReducedMotion = useReducedMotion();
@@ -51,10 +53,10 @@ export default function Contact() {
             experiences.
           </p>
 
-          {/* Contact Links */}
+          {/* Email Contact Links */}
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <a
-              href="naheed.virk@gmail.com"
+              href="mailto:naheed.virk@gmail.com"
               className="
                  inline-flex
                 items-center
@@ -80,9 +82,11 @@ export default function Contact() {
                 motion-reduce:hover:translate-y-0
                 "
             >
+              <FaEnvelope className="mr-2 h-4 w-4" />
               Email Me
             </a>
 
+            {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/in/naheed-virk/"
               target="_blank"
@@ -118,9 +122,11 @@ export default function Contact() {
                 motion-reduce:hover:translate-y-0
                 "
             >
+              <FaLinkedin className="mr-2 h-4 w-4" />
               LinkedIn
             </a>
 
+            {/* Github */}
             <a
               href="https://github.com/naheedkvirk/"
               target="_blank"
@@ -156,6 +162,7 @@ export default function Contact() {
                 motion-reduce:hover:translate-y-0
                 "
             >
+              <FaGithub className="mr-2 h-4 w-4" />
               GitHub
             </a>
           </div>
