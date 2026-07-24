@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { navigation } from "@/data/navigation";
+import { FaFileAlt } from "react-icons/fa";
 
 export default function Header() {
   return (
@@ -28,16 +29,19 @@ export default function Header() {
 
         <div className="flex justify-end">
           <a
-            href="/resume/Naheed-Virk-Resume.pdf"
+            href="/resume/NaheedVirk-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-md bg-teal-600 px-6 py-3 text-white
+            className="
+            inline-flex items-center gap-2 whitespace-nowrap 
+            rounded-md bg-teal-600 px-6 py-3 text-white
             transition-colors duration-200
             hover:bg-teal-700
-            focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
+            focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2
             dark:focus:ring-offset-slate-950
             motion-reduce:transition-none"
           >
+            <FaFileAlt className="h-4 w-4" />
             Resume
           </a>
         </div>
