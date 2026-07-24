@@ -140,7 +140,7 @@ export const experiences: Experience[] = [
     id: 5,
     company: "JSTOR",
     role: "UI Developer",
-    duration: "2014 – 2016",
+    duration: "2011 – 2015",
     location: "Remote",
     summary:
       "Designed and enhanced user-centered digital experiences by creating wireframes, prototypes, and responsive interfaces while collaborating with UX, product, and marketing teams. Focused on usability, accessibility, and continuous user experience improvements for academic research platforms.",
