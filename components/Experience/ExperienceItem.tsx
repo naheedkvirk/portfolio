@@ -15,7 +15,19 @@ export default function ExperienceItem({
 }: ExperienceItemProps) {
   return (
     <motion.article
-      className="relative pl-8 sm:pl-10"
+      className="
+  relative
+  rounded-xl
+  pl-8
+  sm:pl-10
+  p-6
+  transition-all
+  duration-300
+  hover:-translate-y-1
+  hover:bg-white
+  hover:shadow-xl
+  dark:hover:bg-gray-800/60
+"
       initial={shouldReduceMotion ? false : { opacity: 0, y: 32 }}
       whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
       viewport={{
