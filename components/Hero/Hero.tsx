@@ -36,7 +36,7 @@ export default function Hero() {
     >
       <div className="mx-auto max-w-7xl px-6">
         <motion.div
-          className="max-w-3exl"
+          className="mx-auto max-w-3xl text-center"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -53,73 +53,55 @@ export default function Hero() {
             variants={itemVariants}
             className="mt-4 text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl text-slate-900 dark:text-slate-100"
           >
-            Naheed Virk,
+            Naheed Virk
           </motion.h1>
 
           <motion.h2
             variants={itemVariants}
-            className="mt-4 text-3xl font-semibold sm:text-4xl lg:text-5xl text-slate-600 dark:text-slate-400"
+            className="mt-4 text-3xl font-semibold sm:text-4xl lg:text-5xl text-slate-700 dark:text-slate-300"
           >
-            I build accessible, responsive web experiences.
+            Senior UI/UX Front-End Developer
           </motion.h2>
 
           <motion.p
             variants={itemVariants}
-            className="mt-6 max-w-xl text-base leading-8 sm:text-lg text-slate-600 dark:text-slate-300"
+            className="mt-6 max-auto text-base leading-8 sm:text-lg text-slate-600 dark:text-slate-300"
           >
-            I&apos;m a Frontend UI Developer with 15+ years of experience
-            building responsive, accessible, and scalable web applications. I
-            specialize in React, Next.js, TypeScript, and modern design systems,
-            creating intuitive user experiences with clean, maintainable code.
+            I design and build accessible, responsive web applications and
+            scalable design systems..
           </motion.p>
 
           <motion.div
             variants={itemVariants}
-            className="mt-10 flex flex-col gap-4 sm:flex-row"
+            className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
+            {/* Primary CTA */}
             <a
               href="#projects"
-              className="rounded-md bg-teal-600 px-6 py-3 text-white transition-all duration-300 
-              hover:-translate-y-1 hover:bg-teal-700 hover:shadow-lg 
-              focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 
-              dark:focus:ring-offset-slate-950 motion-reduce:transition-none 
-              motion-reduce:hover:translate-y-0"
+              className="inline-flex items-center justify-center rounded-md bg-teal-600 px-6 py-3 text-white
+                transition-all duration-300
+                hover:-translate-y-1 hover:bg-teal-700 hover:shadow-lg
+                focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2
+                dark:focus:ring-offset-slate-950
+                motion-reduce:transition-none
+                motion-reduce:hover:translate-y-0"
             >
               View My Work
             </a>
 
+            {/* Secondary CTA */}
             <a
               href="#contact"
-              className="
-                inline-flex
-                items-center
-                justify-center
-                rounded-md
-                border
-                border-gray-300
-                px-6
-                py-3
-                text-sm
-                font-semibold
-                text-gray-700
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:border-teal-600
-                hover:text-teal-600
-                hover:shadow-lg
-                focus:outline-none
-                focus:ring-2
-                focus:ring-teal-500
-                focus:ring-offset-2
-                dark:border-gray-700
-                dark:text-gray-300
-                dark:hover:border-teal-400
-                dark:hover:text-teal-400
-                dark:focus:ring-offset-gray-950
+              className="inline-flex items-center justify-center rounded-md border border-slate-300 px-6 py-3
+                font-semibold text-slate-700
+                transition-all duration-300
+                hover:-translate-y-1 hover:border-teal-600 hover:text-teal-600 hover:shadow-lg
+                focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2
+                dark:border-slate-700 dark:text-slate-300
+                dark:hover:border-teal-400 dark:hover:text-teal-400
+                dark:focus:ring-offset-slate-950
                 motion-reduce:transition-none
-                motion-reduce:hover:translate-y-0
-                "
+                motion-reduce:hover:translate-y-0"
             >
               Contact Me
             </a>

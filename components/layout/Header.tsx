@@ -37,7 +37,7 @@ export default function Header() {
             rounded-md bg-teal-600 px-6 py-3 text-white
             transition-colors duration-200
             hover:bg-teal-700
-            focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2
+            focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2
             dark:focus:ring-offset-slate-950
             motion-reduce:transition-none"
           >

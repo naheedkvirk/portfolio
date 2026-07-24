@@ -63,7 +63,7 @@ export default function Contact() {
           {/* Contact Links - Email, LinkedIn, Github */}
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
             <a
-              href="mailto:naheed.virk@gmail.com"
+              href="mailto:naheed.virk@gmail.com?subject=Portfolio%20Inquiry"
               className="
                 inline-flex
                 items-center
@@ -158,7 +158,7 @@ export default function Contact() {
                 hover:shadow-lg
                 focus:outline-none
                 focus:ring-2
-                focus:ring-teal-500
+                focus:ring-teal-400
                 focus:ring-offset-2
                 dark:border-gray-700
                 dark:text-gray-300

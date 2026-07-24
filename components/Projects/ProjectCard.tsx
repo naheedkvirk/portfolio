@@ -160,7 +160,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
                 hover:shadow-lg
                 focus:outline-none
                 focus:ring-2
-                focus:ring-teal-500
+                focus:ring-teal-400
                 focus:ring-offset-2
                 dark:focus:ring-offset-slate-800
             "
@@ -191,7 +191,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
                 hover:shadow-lg
                 focus:outline-none
                 focus:ring-2
-                focus:ring-teal-500
+                focus:ring-teal-400
                 focus:ring-offset-2
                 dark:border-slate-600
                 dark:text-slate-200
