@@ -5,6 +5,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white dark:bg-black">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        {/* Left Column - Name */}
         <Link
           href="#home"
           className="text-xl font-semibold text-gray-900 dark:text-gray-100"
@@ -12,7 +13,7 @@ export default function Header() {
           Naheed Virk
         </Link>
 
-        <ul className="flex gap-6">
+        <ul className="hidden lg:flex lg:justify-center lg:gap-6">
           {navigation.map((item) => (
             <li key={item.href}>
               <Link
@@ -24,6 +25,22 @@ export default function Header() {
             </li>
           ))}
         </ul>
+
+        <div className="flex justify-end">
+          <a
+            href="/resume/Naheed-Virk-Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-md bg-teal-600 px-6 py-3 text-white
+            transition-colors duration-200
+            hover:bg-teal-700
+            focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
+            dark:focus:ring-offset-slate-950
+            motion-reduce:transition-none"
+          >
+            Resume
+          </a>
+        </div>
       </nav>
     </header>
   );
