@@ -32,8 +32,8 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="flex min-h-screen items-center bg-gradient-to-br from-white via-slate-50 to-teal-50 
-      py-12 sm:py-16 dark:from-slate-950 dark:via-slate-900 dark:to-teal-950"
+      className="flex items-center bg-gradient-to-br from-white via-slate-50 to-teal-50 
+      py-12 sm:py-32 dark:from-slate-950 dark:via-slate-900 dark:to-teal-950"
     >
       <div className="mx-auto max-w-7xl px-6">
         <motion.div
