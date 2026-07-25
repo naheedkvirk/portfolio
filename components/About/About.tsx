@@ -20,7 +20,7 @@ export default function About() {
       bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900"
     >
       <div className="mx-auto max-w-7xl px-6">
-        <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+        <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
           {/* Left Column */}
           <div>
             <h2
@@ -58,7 +58,7 @@ export default function About() {
           </div>
 
           {/* Right Column */}
-          <div className="flex justify-center">
+          <div className="flex justify-center lg-justyfy-end">
             <div
               className="group relative h-64 w-64 overflow-hidden rounded-2xl 
             border border-gray-200 shadow-xl 
