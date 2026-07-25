@@ -19,9 +19,9 @@ export default function Projects() {
             Projects
           </h2>
 
-          <div className="mt-3 h-1 w-20 rounded-full bg-blue-500" />
+          <div className="mt-3 h-1 w-20 rounded-full bg-teal-500" />
 
-          <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-300">
             A selection of enterprise and personal projects that showcase my
             experience building accessible, responsive, and scalable web
             applications using modern front-end technologies.
@@ -39,30 +39,3 @@ export default function Projects() {
     </section>
   );
 }
-
-/*
-Projects.tsx — The section
-
-This component should:
-
-Import the projects array
-Import ProjectCard
-Loop through the projects
-Render one card per project
-
-It answers:
-
-"How do I display all of my projects?"
-
-The flow
-projects.ts
-    │
-    ▼
-Projects.tsx
-    │
-    ▼
-projects.map(...)
-    │
-    ▼
-ProjectCard.tsx
-*/

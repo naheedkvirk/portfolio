@@ -18,6 +18,7 @@ export default function Contact() {
         {/* Section Header */}
         <motion.div
           className="
+            mx-auto
             max-w-3xl
             rounded-2xl
             border
@@ -49,15 +50,15 @@ export default function Contact() {
             Get In Touch
           </h2>
 
-          <div className="mt-3 h-1 w-20 rounded-full bg-blue-500" />
+          <div className="mt-3 h-1 w-20 rounded-full bg-teal-500" />
 
           <p
             className="mt-6 
                 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-300"
           >
-            I&apos;m always interested in discussing new opportunities,
-            interesting projects, and ways to create meaningful digital
-            experiences.
+            I&apos;m currently open to Senior Front-End, UI Engineering, and
+            Design System opportunities. Whether you&apos;re hiring, building a
+            product, or just want to connect, I&apos;d love to hear from you.
           </p>
 
           {/* Contact Links - Email, LinkedIn, Github */}
@@ -118,7 +119,7 @@ export default function Contact() {
                 hover:shadow-lg
                 focus:outline-none
                 focus:ring-2
-                focus:ring-teal-500
+                focus:ring-teal-400
                 focus:ring-offset-2
                 dark:border-gray-700
                 dark:text-gray-300
@@ -173,6 +174,12 @@ export default function Contact() {
               GitHub
             </a>
           </div>
+          <p className="mt-6 text-sm text-gray-500 dark:text-gray-400">
+            I typically respond within 24–48 hours.
+          </p>
+          <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+            Based in Michigan, USA • Open to remote and hybrid opportunities
+          </p>
         </motion.div>
       </div>
     </section>

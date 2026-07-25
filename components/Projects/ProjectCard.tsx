@@ -47,7 +47,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
 
             ${
               project.featured
-                ? "border-blue-500 dark:border-blue-400"
+                ? "border-teal-500 dark:border-teal-400"
                 : "border-gray-200 dark:border-gray-700"
             }
         `}
@@ -87,7 +87,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
                 left-4
                 top-4
                 rounded-full
-                bg-blue-600
+                bg-teal-600
                 px-3
                 py-1
                 text-xs

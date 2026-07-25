@@ -37,9 +37,9 @@ export default function Experience() {
           >
             Experience
           </h2>
-          <div className="mt-3 h-1 w-20 rounded-full bg-blue-500" />
+          <div className="mt-3 h-1 w-20 rounded-full bg-teal-500" />
 
-          <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-300">
             Over 15 years of experience designing and developing accessible,
             responsive, and scalable web applications across healthcare,
             finance, automotive, manufacturing, and digital publishing.

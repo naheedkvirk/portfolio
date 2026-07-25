@@ -53,7 +53,7 @@ export default function ExperienceItem({
           h-3
           w-3
           rounded-full
-          bg-blue-600
+          bg-teal-600
           ring-4
           ring-gray-50
           dark:ring-gray-900
@@ -102,9 +102,15 @@ export default function ExperienceItem({
         </p>
 
         {/* Achievements */}
-        <ul className="mt-5 list-disc space-y-2 pl-5 text-gray-600 dark:text-gray-300">
+        <ul className="mt-5 space-y-2 text-gray-600 dark:text-gray-300">
           {experience.achievements.map((achievement) => (
-            <li key={achievement}>{achievement}</li>
+            <li key={achievement} className="flex items-start gap-3">
+              <span
+                aria-hidden="true"
+                className="mt-2 h-2 w-2 shrink-0 rounded-full bg-teal-500"
+              />
+              {achievement}
+            </li>
           ))}
         </ul>
 

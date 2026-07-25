@@ -1,5 +1,6 @@
 "use client";
 import { motion, type Variants } from "motion/react";
+import { FaBriefcase } from "react-icons/fa";
 
 const containerVariants: Variants = {
   hidden: {},
@@ -41,10 +42,35 @@ export default function Hero() {
           initial="hidden"
           animate="visible"
         >
-          {/* Hero content will be added in Task 5 */}
+          {/* Hero content */}
+          <motion.div
+            variants={itemVariants}
+            className="mb-6 flex justify-center"
+          >
+            <div
+              className="
+              inline-flex
+              items-center
+              gap-2
+              rounded-full
+              bg-teal-50
+              px-4
+              py-1.5
+              text-sm
+              font-medium
+              text-teal-700
+              dark:bg-teal-900/30
+              dark:text-teal-300
+            "
+            >
+              <FaBriefcase className="h-3.5 w-3.5" />
+              15+ Years Experience
+            </div>
+          </motion.div>
+
           <motion.p
             variants={itemVariants}
-            className="text-sm font-medium tracking-wide sm:text-base text-teal-600 dark:text-teal-400"
+            className="text-sm font-medium tracking-wide text-teal-600 sm:text-base dark:text-teal-400"
           >
             Hi, my name is
           </motion.p>
@@ -65,10 +91,12 @@ export default function Hero() {
 
           <motion.p
             variants={itemVariants}
-            className="mt-6 max-auto text-base leading-8 sm:text-lg text-slate-600 dark:text-slate-300"
+            className="mt-6 mx-auto max-w-xl text-base leading-8 text-slate-600 sm:text-lg dark:text-slate-300"
           >
-            I design and build accessible, responsive web applications and
-            scalable design systems..
+            Senior UI/UX Front-End Engineer with 15+ years of experience
+            building enterprise web applications, design systems, and accessible
+            user interfaces using React, Angular, TypeScript, and modern
+            frontend technologies.
           </motion.p>
 
           <motion.div
