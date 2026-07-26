@@ -1,5 +1,5 @@
 /*
-  Project modedl + data
+  Project model + data
 */
 export interface Project {
   id: number;
@@ -11,6 +11,11 @@ export interface Project {
   githubUrl?: string;
   liveUrl?: string;
   featured?: boolean;
+
+  //case study fields
+  challenge?: string;
+  solution?: string;
+  impact?: string;
 }
 
 export const projects: Project[] = [
@@ -20,16 +25,25 @@ export const projects: Project[] = [
     subtitle: "Component Library & UI Platform",
     description:
       "Designed and developed a scalable enterprise design system with reusable React components, documentation, accessibility standards, and Storybook integration.",
-    technologies: ["React", "Typescript", "Material UI", "Storybook", "Vite"],
+    technologies: ["React", "TypeScript", "Material UI", "Storybook", "Vite"],
     image: "/images/projects/design.jpg",
     featured: true,
+
+    challenge:
+      "Create a scalable component library supporting multiple enterprise applications and development teams.",
+
+    solution:
+      "Built reusable React components using Material UI, TypeScript, and Storybook with accessibility standards and documentation.",
+
+    impact:
+      "Improved UI consistency, development efficiency, and collaboration between designers and engineers.",
   },
   {
     id: 2,
     title: "Financial Services Platform",
     subtitle: "Enterprise Web Application",
     description:
-      "Built responsive enterprise applications focused on usability, accessibility, and maintainable frontend architecture for financial services workflows.",
+      "Developed responsive enterprise applications improving usability, accessibility compliance, and frontend maintainability for financial workflows.",
     technologies: ["React", "Next.js", "TypeScript", "REST APIs", "Jest"],
     image: "/images/projects/financial.jpg",
   },
@@ -62,17 +76,37 @@ export const projects: Project[] = [
   },
   {
     id: 6,
-    title: "Personal Portfolio Website",
-    subtitle: "Modern Developer Portfolio",
+    title: "Portfolio Website",
+
+    subtitle: "Senior Front-End Developer Portfolio",
+
     description:
-      "Designed and developed a modern portfolio website showcasing projects, experience, and technical skills using Next.js and Tailwind CSS.",
-    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      "A recruiter-focused portfolio showcasing senior frontend expertise through accessible UI, reusable components, responsive design, and modern Next.js architecture.",
+
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Motion"],
+
     image: "/images/projects/portfolio.jpg",
+
     liveUrl: "https://naheedvirk-portfolio.vercel.app/",
+
     githubUrl: "https://github.com/naheedkvirk/portfolio",
+
     featured: true,
+
+    challenge:
+      "Create a modern recruiter-facing portfolio showcasing senior frontend expertise.",
+
+    solution:
+      "Built a responsive Next.js application with reusable components, accessibility-first design, and animation.",
+
+    impact:
+      "Improved personal branding and demonstrated production frontend architecture.",
   },
 ];
+
+export function getProjectById(id: number) {
+  return projects.find((project) => project.id === id);
+}
 
 /*
 projects.ts — The data

@@ -6,6 +6,7 @@ import { motion } from "motion/react";
 
 import Image from "next/image";
 import { Project } from "./projectData";
+import Link from "next/link";
 
 interface ProjectCardProps {
   project: Project;
@@ -116,6 +117,15 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         <p className="mt-4 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
           {project.description}
         </p>
+
+        {project.challenge && project.solution && project.impact && (
+          <Link
+            href={`/projects/${project.id}`}
+            className="mt-4 inline-flex items-center text-sm font-semibold text-teal-600 hover:text-teal-700"
+          >
+            View Case Study →
+          </Link>
+        )}
 
         <div className="mt-5 flex flex-wrap gap-2">
           {project.technologies.map((technology) => (

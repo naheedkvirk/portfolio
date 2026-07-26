@@ -44,6 +44,22 @@ export default function About() {
               accessibility, and clean architecture.
             </p>
 
+            <div className="mt-6">
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-900 dark:text-gray-100">
+                Industry Experience
+              </h3>
+
+              <p className="mt-2 text-gray-600 dark:text-gray-300">
+                Healthcare • Finance • Automotive • Manufacturing • Digital
+                Publishing
+              </p>
+
+              <p className="mt-2 text-sm leading-6 text-gray-500 dark:text-gray-400">
+                Building enterprise applications across regulated and complex
+                business domains.
+              </p>
+            </div>
+
             <ul className="mt-8 space-y-4 text-gray-700 dark:text-gray-300">
               {skills.map((skill) => (
                 <li key={skill} className="flex items-center gap-3 text-base">
