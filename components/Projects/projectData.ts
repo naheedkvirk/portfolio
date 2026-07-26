@@ -49,11 +49,18 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Healthcare Insurance Portal",
+    title: "Travel Insurance Platform",
     subtitle: "Customer Experience Platform",
     description:
-      "Developed user-focused healthcare applications improving digital experiences through responsive interfaces and modern frontend practices.",
-    technologies: ["React", "JavaScript", "HTML", "CSS", "Accessibility"],
+      "Designed and developed responsive web applications for a global travel medical insurance provider, enhancing customer experiences across policy management, member services, and digital self-service workflows.",
+    technologies: [
+      "React",
+      "React JS",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Accessibility",
+    ],
     image: "/images/projects/healthcare.jpg",
   },
   {
