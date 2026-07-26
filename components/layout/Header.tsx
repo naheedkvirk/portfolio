@@ -12,7 +12,7 @@ export default function Header() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         {/* Left Column - Name */}
         <Link
-          href="#home"
+          href="/#home"
           onClick={() => setIsOpen(false)}
           className="text-xl font-semibold text-gray-900 dark:text-gray-100"
         >

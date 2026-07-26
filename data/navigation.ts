@@ -3,22 +3,22 @@ import type { NavigationItem } from "@/types/navigation";
 export const navigation: NavigationItem[] = [
   {
     label: "Home",
-    href: "#home",
+    href: "/#home",
   },
   {
     label: "About",
-    href: "#about",
+    href: "/#about",
   },
   {
     label: "Projects",
-    href: "#projects",
+    href: "/#projects",
   },
   {
     label: "Experience",
-    href: "#experience",
+    href: "/#experience",
   },
   {
     label: "Contact",
-    href: "#contact",
+    href: "/#contact",
   },
 ];
