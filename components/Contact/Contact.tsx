@@ -1,7 +1,7 @@
 "use client";
 import { motion, useReducedMotion } from "motion/react";
-//import { Mail } from "lucide-react";
 import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { section, sectionSpacing, whiteBgGray950 } from "@/lib/styles";
 
 export default function Contact() {
   const prefersReducedMotion = useReducedMotion();
@@ -11,8 +11,7 @@ export default function Contact() {
     <section
       id="contact"
       aria-labelledby="contact-heading"
-      className="scroll-mt-24 bg-white 
-      py-12 sm:py-16 dark:bg-gray-950 "
+      className={`${section} ${sectionSpacing} ${whiteBgGray950}`}
     >
       <div className="mx-auto max-w-7xl px-6">
         {/* Section Header */}

@@ -1,6 +1,12 @@
 "use client";
 import { motion, type Variants } from "motion/react";
 import { FaBriefcase } from "react-icons/fa";
+import {
+  heroLayout,
+  heroSpacing,
+  gradientSlateTeal,
+  heroBackground,
+} from "@/lib/styles";
 
 const containerVariants: Variants = {
   hidden: {},
@@ -32,8 +38,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="flex items-center bg-gradient-to-br from-white via-slate-50 to-teal-50 
-      py-12 sm:py-32 dark:from-slate-950 dark:via-slate-900 dark:to-teal-950"
+      className={`${heroLayout}${heroSpacing}  ${gradientSlateTeal} ${heroBackground}`}
     >
       <div className="mx-auto max-w-7xl px-6">
         <motion.div

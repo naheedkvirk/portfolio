@@ -1,13 +1,13 @@
 import ProjectCard from "./ProjectCard";
 import { projects } from "./projectData";
+import { section, sectionSpacingLarge, whiteBgGray900 } from "@/lib/styles";
 
 export default function Projects() {
   return (
     <section
       id="projects"
       aria-labelledby="projects-heading"
-      className="scroll-mt-24 bg-white 
-      py-16 sm:py-20 dark:bg-gray-900"
+      className={`${section} ${sectionSpacingLarge} ${whiteBgGray900}`}
     >
       <div className="mx-auto max-w-7xl px-6">
         {/* Section Header */}

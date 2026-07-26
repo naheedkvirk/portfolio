@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { gradientGray50White, section, sectionSpacing } from "@/lib/styles";
 
 export default function About() {
   const skills = [
@@ -15,9 +16,7 @@ export default function About() {
     <section
       id="about"
       aria-labelledby="about-heading"
-      className="scroll-mt-24 
-      py-12 sm:py-16 
-      bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900"
+      className={`${section} ${sectionSpacing} ${gradientGray50White}`}
     >
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-start">

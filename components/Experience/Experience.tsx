@@ -2,6 +2,7 @@
 import ExperienceItem from "./ExperienceItem";
 import { experiences } from "./experienceData";
 import { motion, useReducedMotion, type Variants } from "motion/react";
+import { gray50Bg900, section, sectionSpacing } from "@/lib/styles";
 
 const timelineVariants: Variants = {
   hidden: {},
@@ -20,7 +21,7 @@ export default function Experience() {
     <section
       id="experience"
       aria-labelledby="experience-heading"
-      className="scroll-mt-24 bg-gray-50 py-12 sm:py-16 dark:bg-gray-900"
+      className={`${section} ${sectionSpacing} ${gray50Bg900}`}
     >
       <div className="mx-auto max-w-7xl px-6">
         {/* Section Header */}
