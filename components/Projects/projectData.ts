@@ -26,7 +26,7 @@ export const projects: Project[] = [
     description:
       "Designed and developed a scalable enterprise design system with reusable React components, documentation, accessibility standards, and Storybook integration.",
     technologies: ["React", "TypeScript", "Material UI", "Storybook", "Vite"],
-    image: "/images/projects/design.jpg",
+    image: "/images/projects/enterpriseDS.jpg",
     featured: true,
 
     challenge:
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     description:
       "Developed responsive enterprise applications improving usability, accessibility compliance, and frontend maintainability for financial workflows.",
     technologies: ["React", "Next.js", "TypeScript", "REST APIs", "Jest"],
-    image: "/images/projects/financial.jpg",
+    image: "/images/projects/financialSP.jpg",
   },
   {
     id: 3,
@@ -61,7 +61,7 @@ export const projects: Project[] = [
       "CSS",
       "Accessibility",
     ],
-    image: "/images/projects/healthcare.jpg",
+    image: "/images/projects/travelIP.jpg",
   },
   {
     id: 4,
@@ -70,7 +70,7 @@ export const projects: Project[] = [
     description:
       "Created scalable web solutions supporting automotive customer journeys with performance-focused frontend development.",
     technologies: ["React", "TypeScript", "Node.js", "Agile"],
-    image: "/images/projects/automotive.jpg",
+    image: "/images/projects/autoWP.jpg",
   },
   {
     id: 5,
@@ -79,7 +79,7 @@ export const projects: Project[] = [
     description:
       "Contributed to building search-driven experiences that help users discover and interact with large-scale academic content.",
     technologies: ["React", "JavaScript", "APIs", "UI Development"],
-    image: "/images/projects/academic.jpg",
+    image: "/images/projects/academicSP.jpg",
   },
   {
     id: 6,
