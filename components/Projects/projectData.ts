@@ -22,10 +22,20 @@ export const projects: Project[] = [
   {
     id: 1,
     title: "Enterprise Design System",
-    subtitle: "Component Library & UI Platform",
+    subtitle: "Reusable React Components • Storybook • Material UI",
     description:
-      "Designed and developed a scalable enterprise design system with reusable React components, documentation, accessibility standards, and Storybook integration.",
-    technologies: ["React", "TypeScript", "Material UI", "Storybook", "Vite"],
+      "Designed and developed a scalable enterprise design system with reusable React components, shared UI patterns, and comprehensive Storybook documentation. Built accessible, themeable components that enabled development teams to deliver consistent, high-quality user experiences across multiple enterprise applications while accelerating development and reducing code duplication.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Material UI",
+      "Storybook",
+      "Tailwind CSS",
+      "Playwright",
+      "Cypress",
+      "Node.js",
+      "Vite",
+    ],
     image: "/images/projects/enterpriseDS.jpg",
     featured: true,
 
@@ -40,22 +50,35 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Financial Services Platform",
-    subtitle: "Enterprise Web Application",
+    title: "Enterprise Banking Platform",
+    subtitle: "Digital Banking • Responsive Web Applications",
     description:
-      "Developed responsive enterprise applications improving usability, accessibility compliance, and frontend maintainability for financial workflows.",
-    technologies: ["React", "Next.js", "TypeScript", "REST APIs", "Jest"],
+      "Developed secure, responsive web applications for a global banking platform, creating intuitive user experiences for financial services. Collaborated with UX designers to build accessible interfaces, optimized application performance, and implemented scalable front-end architecture using modern JavaScript frameworks and cloud-native development practices.",
+    technologies: [
+      "React",
+      "Angular",
+      "Angular JS",
+      "Vue.js",
+      "TypeScript",
+      "GraphQl",
+      "GCP",
+      "Docker",
+      "Kubernetes",
+      "REST APIs",
+      "Jest",
+    ],
     image: "/images/projects/financialSP.jpg",
   },
   {
     id: 3,
     title: "Travel Insurance Platform",
-    subtitle: "Customer Experience Platform",
+    subtitle: "Customer Portal • Policy Management",
     description:
-      "Designed and developed responsive web applications for a global travel medical insurance provider, enhancing customer experiences across policy management, member services, and digital self-service workflows.",
+      "Built and enhanced customer-facing web applications for a global travel medical insurance provider. Developed reusable Angular components, improved application performance, and delivered responsive, accessible interfaces that supported policy management, member services, and digital self-service experiences.",
     technologies: [
-      "React",
-      "React JS",
+      "Angular",
+      "Angular JS",
+      "Typesctipt",
       "JavaScript",
       "HTML",
       "CSS",
@@ -65,32 +88,49 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Automotive Web Platform",
-    subtitle: "Digital Experience Application",
+    title: "Enterprise Front-End Framework",
+    subtitle: "Angular Framework • Internal Developer Platform",
     description:
-      "Created scalable web solutions supporting automotive customer journeys with performance-focused frontend development.",
-    technologies: ["React", "TypeScript", "Node.js", "Agile"],
+      "Developed and maintained a scalable front-end framework that enabled internal engineering teams to build enterprise web applications more efficiently. Created reusable Angular components, modernized legacy applications, and established a maintainable architecture with state management, routing, API integration, and automated testing.",
+    technologies: [
+      "Angular",
+      "TypeScript",
+      "NgRx",
+      "RxJS",
+      "Bootstrap",
+      "Jasmine",
+      "Karma",
+      "Agile",
+    ],
     image: "/images/projects/autoWP.jpg",
   },
   {
     id: 5,
-    title: "Academic Search Platform",
-    subtitle: "Research Discovery Application",
+    title: "Digital Research Platform",
+    subtitle: "Academic Search • Content Discovery",
     description:
-      "Contributed to building search-driven experiences that help users discover and interact with large-scale academic content.",
-    technologies: ["React", "JavaScript", "APIs", "UI Development"],
+      "Designed and developed intuitive search and discovery experiences for academic research and professional learning platforms. Improved content discovery, accessibility, responsive design, and usability through user-centered interfaces that helped researchers, students, and professionals efficiently access digital knowledge resources.",
+    technologies: [
+      "jQuery",
+      "JavaScript",
+      "APIs",
+      "UI Development",
+      "HTML",
+      "CSS",
+      "Accessibility",
+    ],
     image: "/images/projects/academicSP.jpg",
   },
   {
     id: 6,
-    title: "Portfolio Website",
+    title: "Personal Portfolio",
 
-    subtitle: "Senior Front-End Developer Portfolio",
+    subtitle: "Next.js • Modern UI • Motion",
 
     description:
-      "A recruiter-focused portfolio showcasing senior frontend expertise through accessible UI, reusable components, responsive design, and modern Next.js architecture.",
+      "Designed and developed a responsive personal portfolio showcasing enterprise front-end development expertise. Built with Next.js, React, Tailwind CSS, and Motion, the site emphasizes accessibility, performance, and clean, modern user experience while highlighting professional projects and technical skills.",
 
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Motion"],
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Motion"],
 
     image: "/images/projects/portfolio.jpg",
 

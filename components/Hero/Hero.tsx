@@ -85,10 +85,11 @@ export default function Hero() {
           </motion.h2>
 
           <motion.p variants={itemVariants} className={heroDescription}>
-            Senior UI/UX Front-End Engineer with 15+ years of experience
-            building enterprise web applications, design systems, and accessible
-            user interfaces using React, Angular, TypeScript, and modern
-            frontend technologies.
+            I design and build accessible, scalable, and high-performance
+            enterprise web applications using React, Next.js, TypeScript, and
+            modern front-end technologies. With over 15 years of experience, I
+            specialize in design systems, reusable component libraries, and
+            creating intuitive user experiences across enterprise platforms.
           </motion.p>
 
           <motion.div variants={itemVariants} className={ctaGroup}>

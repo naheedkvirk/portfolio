@@ -49,29 +49,33 @@ export default function About() {
             <div className={sectionAccent} />
 
             <p className={`mt-6 max-w-xl text-lg leading-8 ${bodyTextGray}`}>
-              I&apos;m a Senior UI/UX Front-End Developer who enjoys building
-              accessible, responsive, and high-performance web applications with
-              modern JavaScript technologies.
+              I&apos;m a Senior UI/UX Front-End Developer with 15+ years of
+              experience designing and building enterprise web applications that
+              are accessible, scalable, and user-centered. I enjoy transforming
+              complex business requirements into intuitive digital experiences
+              using modern front-end technologies.
             </p>
 
             <p className={`mt-4 max-w-xl leading-8 ${bodyTextGray}`}>
-              I specialize in React, Next.js, TypeScript, Material UI, and
-              modern CSS, creating scalable user interfaces and reusable
-              component systems with a strong focus on usability, performance,
-              accessibility, and clean architecture.
+              I specialize in React, Next.js, TypeScript, Material UI,
+              Storybook, and Tailwind CSS, with expertise in design systems,
+              reusable component libraries, accessibility (WCAG), and
+              performance optimization. I focus on creating maintainable
+              front-end architectures that deliver exceptional user experiences
+              across enterprise applications.
             </p>
 
             <div className="mt-6">
               <h3 className={subsectionTitle}>Industry Experience</h3>
 
               <p className={`mt-2 ${bodyTextGray}`}>
-                Healthcare • Finance • Automotive • Manufacturing • Digital
+                Automotive • Banking • Travel Insurance • Academic • Digital
                 Publishing
               </p>
 
               <p className={`mt-2 ${mutedText}`}>
-                Building enterprise applications across regulated and complex
-                business domains.
+                Building enterprise applications across complex, regulated
+                industries.
               </p>
             </div>
 

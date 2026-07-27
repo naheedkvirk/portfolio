@@ -27,9 +27,12 @@ export default function Projects() {
           <div className={sectionAccent} />
 
           <p className={`mt-6 max-w-2xl text-lg leading-8 ${bodyTextGray}`}>
-            A selection of enterprise and personal projects that showcase my
-            experience building accessible, responsive, and scalable web
-            applications using modern front-end technologies.
+            A collection of enterprise and personal projects demonstrating my
+            experience designing and building scalable, accessible, and
+            user-centered web applications. From design systems and reusable
+            component libraries to customer-facing enterprise platforms, each
+            project reflects a focus on clean architecture, performance, and
+            exceptional user experience.
           </p>
         </div>
 
