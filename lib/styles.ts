@@ -112,3 +112,14 @@ export const cardButtonSecondary =
   "border border-slate-300 text-slate-700 hover:border-teal-600 hover:text-teal-600 dark:border-slate-600 dark:text-slate-200 dark:hover:border-teal-400 dark:hover:text-teal-400";
 export const textLink =
   "inline-flex items-center text-sm font-semibold text-teal-600 hover:text-teal-700";
+
+// ===============================
+// Project Case Study
+// ===============================
+
+export const caseStudyContainer = "mt-8 space-y-6";
+
+export const caseStudyTitle =
+  "text-xl font-semibold text-gray-900 dark:text-white";
+
+export const caseStudyText = "mt-2 text-gray-600 dark:text-gray-300";
