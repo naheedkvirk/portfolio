@@ -180,3 +180,35 @@ export const secondaryButton =
   "border border-gray-300 text-gray-700 hover:border-teal-600 hover:text-teal-600 dark:border-gray-700 dark:text-gray-300 dark:hover:border-teal-400 dark:hover:text-teal-400";
 
 export const contactMeta = "text-sm text-gray-500 dark:text-gray-400";
+
+// ===============================
+// Header
+// ===============================
+
+export const header =
+  "sticky top-0 z-50 w-full border-b bg-white dark:bg-black";
+
+export const navContainer =
+  "mx-auto flex max-w-6xl items-center justify-between px-6 py-4";
+
+export const brandLink =
+  "text-xl font-semibold text-gray-900 transition-colors hover:text-teal-600 dark:text-gray-100 dark:hover:text-teal-400";
+
+export const desktopNav = "hidden lg:flex lg:justify-center lg:gap-6";
+
+export const desktopNavLink =
+  "text-sm font-medium text-gray-900 transition-colors hover:text-teal-600 dark:text-gray-100 dark:hover:text-teal-400";
+
+export const desktopResumeWrapper = "hidden lg:flex lg:justify-end";
+
+export const menuButton =
+  "lg:hidden text-gray-900 transition-colors hover:text-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2 dark:text-gray-100 dark:hover:text-teal-400 dark:focus:ring-offset-black";
+
+export const mobileMenu =
+  "border-t bg-white px-6 py-4 dark:border-gray-800 dark:bg-black lg:hidden";
+
+export const mobileNavLink =
+  "text-sm font-medium text-gray-900 hover:text-teal-600 dark:text-gray-100 dark:hover:text-teal-400";
+
+export const mobileResumeButton =
+  "inline-flex items-center gap-2 rounded-md bg-teal-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-teal-700";
