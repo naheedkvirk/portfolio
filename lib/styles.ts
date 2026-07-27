@@ -17,6 +17,8 @@ export const section = "scroll-mt-24";
 export const sectionSpacing = "py-12 sm:py-16";
 export const sectionSpacingLarge = "py-16 sm:py-20";
 
+export const sectionAccent = "mt-3 h-1 w-20 rounded-full bg-teal-500";
+
 // Section Backgrounds
 export const whiteBgGray950 = "bg-white dark:bg-gray-950";
 export const whiteBgGray900 = "bg-white dark:bg-gray-900";
@@ -46,6 +48,9 @@ export const heroSubtitle =
 export const heroDescription =
   "mx-auto mt-6 max-w-xl text-base leading-8 text-slate-600 dark:text-slate-300 sm:text-lg";
 
+export const sectionTitle =
+  "text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl";
+
 // ===============================
 // Badge
 // ===============================
@@ -62,3 +67,13 @@ export const buttonBase =
 export const buttonPrimary = "bg-teal-600 text-white hover:bg-teal-700";
 export const buttonSecondary =
   "border border-slate-300 font-semibold text-slate-700 hover:border-teal-600 hover:text-teal-600 dark:border-slate-700 dark:text-slate-300 dark:hover:border-teal-400 dark:hover:text-teal-400";
+
+//About
+export const bodyText = "text-gray-600 dark:text-gray-300";
+
+export const skillItem = "flex items-center gap-3 text-base";
+
+export const profileImage =
+  "object-cover object-center transition-transform duration-500 group-hover:scale-105 motion-reduce:transform-none motion-reduce:transition-none";
+export const profileImageCard =
+  "group relative h-64 w-64 overflow-hidden rounded-2xl border border-gray-200 shadow-xl transition-all duration-300 hover:border-teal-300 hover:shadow-2xl md:h-72 md:w-72 dark:border-gray-800 dark:hover:border-teal-700";
