@@ -1,6 +1,14 @@
 import ProjectCard from "./ProjectCard";
 import { projects } from "./projectData";
-import { section, sectionSpacingLarge, whiteBgGray900 } from "@/lib/styles";
+import {
+  pageContainer,
+  section,
+  sectionAccent,
+  sectionSpacingLarge,
+  sectionTitle,
+  whiteBgGray900,
+  bodyTextGray,
+} from "@/lib/styles";
 
 export default function Projects() {
   return (
@@ -9,19 +17,16 @@ export default function Projects() {
       aria-labelledby="projects-heading"
       className={`${section} ${sectionSpacingLarge} ${whiteBgGray900}`}
     >
-      <div className="mx-auto max-w-7xl px-6">
+      <div className={pageContainer}>
         {/* Section Header */}
         <div className="max-w-3xl">
-          <h2
-            id="projects-heading"
-            className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl"
-          >
+          <h2 id="projects-heading" className={sectionTitle}>
             Projects
           </h2>
 
-          <div className="mt-3 h-1 w-20 rounded-full bg-teal-500" />
+          <div className={sectionAccent} />
 
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-300">
+          <p className={`mt-6 max-w-2xl text-lg leading-8 ${bodyTextGray}`}>
             A selection of enterprise and personal projects that showcase my
             experience building accessible, responsive, and scalable web
             applications using modern front-end technologies.

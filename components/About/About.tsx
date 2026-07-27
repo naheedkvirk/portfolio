@@ -1,6 +1,6 @@
 import Image from "next/image";
 import {
-  bodyText,
+  bodyTextGray,
   gradientGray50White,
   pageContainer,
   profileImage,
@@ -38,13 +38,13 @@ export default function About() {
             </h2>
             <div className={sectionAccent} />
 
-            <p className={`mt-6 max-w-xl text-lg leading-8 ${bodyText}`}>
+            <p className={`mt-6 max-w-xl text-lg leading-8 ${bodyTextGray}`}>
               I&apos;m a Senior UI/UX Front-End Developer who enjoys building
               accessible, responsive, and high-performance web applications with
               modern JavaScript technologies.
             </p>
 
-            <p className={`mt-4 max-w-xl leading-8 ${bodyText}`}>
+            <p className={`mt-4 max-w-xl leading-8 ${bodyTextGray}`}>
               I specialize in React, Next.js, TypeScript, Material UI, and
               modern CSS, creating scalable user interfaces and reusable
               component systems with a strong focus on usability, performance,

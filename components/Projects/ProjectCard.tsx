@@ -2,11 +2,29 @@
     Reusable card
 */
 "use client";
-import { motion } from "motion/react";
+
+"use client";
 
 import Image from "next/image";
-import { Project } from "./projectData";
 import Link from "next/link";
+import { motion } from "motion/react";
+
+import { Project } from "./projectData";
+
+import {
+  cardButtonBase,
+  cardButtonPrimary,
+  cardButtonSecondary,
+  cardImage,
+  cardImageOverlay,
+  cardImageWrapper,
+  defaultCard,
+  featuredBadge,
+  featuredCard,
+  projectCard,
+  technologyBadge,
+  textLink,
+} from "@/lib/styles";
 
 interface ProjectCardProps {
   project: Project;
@@ -32,74 +50,22 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         duration: 0.5,
         delay: index * 0.1,
       }}
-
-      className={`
-            group
-            overflow-hidden
-            rounded-2xl
-            border
-            bg-white
-            shadow-sm
-            transition-all
-            duration-300
-            hover:-translate-y-2
-            hover:shadow-xl
-            dark:bg-gray-800
-
-            ${
-              project.featured
-                ? "border-teal-500 dark:border-teal-400"
-                : "border-gray-200 dark:border-gray-700"
-            }
-        `}
+      className={`${projectCard} ${
+        project.featured ? featuredCard : defaultCard
+      }`}
     >
       {/* Image Section */}
-      <div className="relative h-64 overflow-hidden">
+      <div className={cardImageWrapper}>
         <Image
           src={project.image}
           alt={project.title}
           fill
-          className="
-        object-cover
-        transition-transform
-        duration-500
-        group-hover:scale-110
-      "
+          className={cardImage}
           sizes="(max-width: 768px) 100vw, 50vw"
         />
-        <div
-          className="
-            absolute
-            inset-0
-            bg-gradient-to-t
-            from-black/30
-            via-transparent
-            opacity-0
-            transition-opacity
-            duration-300
-            group-hover:opacity-100
-            "
-        />
+        <div className={cardImageOverlay} />
 
-        {project.featured && (
-          <div
-            className="
-                absolute
-                left-4
-                top-4
-                rounded-full
-                bg-teal-600
-                px-3
-                py-1
-                text-xs
-                font-semibold
-                text-white
-                shadow-md
-                "
-          >
-            Featured
-          </div>
-        )}
+        {project.featured && <div className={featuredBadge}>Featured</div>}
       </div>
 
       {/* Content Section */}
@@ -119,31 +85,14 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         </p>
 
         {project.challenge && project.solution && project.impact && (
-          <Link
-            href={`/projects/${project.id}`}
-            className="mt-4 inline-flex items-center text-sm font-semibold text-teal-600 hover:text-teal-700"
-          >
+          <Link href={`/projects/${project.id}`} className={`${textLink} mt-4`}>
             View Case Study →
           </Link>
         )}
 
         <div className="mt-5 flex flex-wrap gap-2">
           {project.technologies.map((technology) => (
-            <span
-              key={technology}
-              className="
-                rounded-full
-                bg-teal-50
-                px-3
-                py-1
-                text-xs
-                font-medium
-                text-teal-700
-
-                dark:bg-teal-900/30
-                dark:text-teal-300
-                "
-            >
+            <span key={technology} className={technologyBadge}>
               {technology}
             </span>
           ))}
@@ -155,25 +104,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer" //prevents security issues when opening external links
-              className="
-                rounded-md
-                bg-teal-600
-                px-4
-                py-2
-                text-sm
-                font-medium
-                text-white
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:bg-teal-700
-                hover:shadow-lg
-                focus:outline-none
-                focus:ring-2
-                focus:ring-teal-400
-                focus:ring-offset-2
-                dark:focus:ring-offset-slate-800
-            "
+              className={`${cardButtonBase} ${cardButtonPrimary}`}
             >
               Live Demo
             </a>
@@ -184,31 +115,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="
-                rounded-md
-                border
-                border-slate-300
-                px-4
-                py-2
-                text-sm
-                font-medium
-                text-slate-700
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:border-teal-600
-                hover:text-teal-600
-                hover:shadow-lg
-                focus:outline-none
-                focus:ring-2
-                focus:ring-teal-400
-                focus:ring-offset-2
-                dark:border-slate-600
-                dark:text-slate-200
-                dark:hover:border-teal-400
-                dark:hover:text-teal-400
-                dark:focus:ring-offset-slate-800
-            "
+              className={`${cardButtonBase} ${cardButtonSecondary}`}
             >
               GitHub
             </a>

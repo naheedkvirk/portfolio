@@ -69,7 +69,7 @@ export const buttonSecondary =
 // ===============================
 // About
 // ===============================
-export const bodyText = "text-gray-600 dark:text-gray-300";
+export const bodyTextGray = "text-gray-600 dark:text-gray-300";
 
 export const skillItem = "flex items-center gap-3 text-base";
 
@@ -83,3 +83,32 @@ export const profileImageCard =
 // Components
 // ===============================
 export const sectionAccent = "mt-3 h-1 w-20 rounded-full bg-teal-500";
+
+// ===============================
+// Project Card
+// ===============================
+export const cardImageWrapper = "relative h-64 overflow-hidden";
+export const projectCard =
+  "group overflow-hidden rounded-2xl border bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl dark:bg-gray-800";
+
+export const featuredCard = "border-teal-500 dark:border-teal-400";
+
+export const defaultCard = "border-gray-200 dark:border-gray-700";
+export const cardImage =
+  "object-cover transition-transform duration-500 group-hover:scale-110";
+export const cardImageOverlay =
+  "absolute inset-0 bg-gradient-to-t from-black/30 via-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100";
+export const featuredBadge =
+  "absolute left-4 top-4 rounded-full bg-teal-600 px-3 py-1 text-xs font-semibold text-white shadow-md";
+export const technologyBadge =
+  "rounded-full bg-teal-50 px-3 py-1 text-xs font-medium text-teal-700 dark:bg-teal-900/30 dark:text-teal-300";
+
+export const cardButtonBase =
+  "rounded-md px-4 py-2 text-sm font-medium transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2 dark:focus:ring-offset-slate-800";
+
+export const cardButtonPrimary = "bg-teal-600 text-white hover:bg-teal-700";
+
+export const cardButtonSecondary =
+  "border border-slate-300 text-slate-700 hover:border-teal-600 hover:text-teal-600 dark:border-slate-600 dark:text-slate-200 dark:hover:border-teal-400 dark:hover:text-teal-400";
+export const textLink =
+  "inline-flex items-center text-sm font-semibold text-teal-600 hover:text-teal-700";
