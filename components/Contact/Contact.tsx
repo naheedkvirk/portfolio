@@ -1,7 +1,21 @@
 "use client";
 import { motion, useReducedMotion } from "motion/react";
 import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
-import { section, sectionSpacing, whiteBgGray950 } from "@/lib/styles";
+import {
+  buttonBase,
+  buttonPrimary,
+  buttonSecondary,
+  contactCard,
+  contactLinkGroup,
+  contactMeta,
+  contactText,
+  pageContainer,
+  section,
+  sectionSpacing,
+  sectionTitle,
+  sectionAccent,
+  whiteBgGray950,
+} from "@/lib/styles";
 
 export default function Contact() {
   const prefersReducedMotion = useReducedMotion();
@@ -13,25 +27,10 @@ export default function Contact() {
       aria-labelledby="contact-heading"
       className={`${section} ${sectionSpacing} ${whiteBgGray950}`}
     >
-      <div className="mx-auto max-w-7xl px-6">
+      <div className={pageContainer}>
         {/* Section Header */}
         <motion.div
-          className="
-            mx-auto
-            max-w-3xl
-            rounded-2xl
-            border
-            border-gray-200
-            bg-gray-50
-            p-8
-            shadow-md
-            transition-shadow
-            duration-300
-            hover:shadow-lg
-            dark:border-gray-800
-            dark:bg-gray-900
-            sm:p-10
-        "
+          className={contactCard}
           initial={shouldReduceMotion ? false : { opacity: 0, y: 32 }}
           whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
           viewport={{
@@ -42,52 +41,23 @@ export default function Contact() {
             duration: 0.6,
           }}
         >
-          <h2
-            id="contact-heading"
-            className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl"
-          >
+          <h2 id="contact-heading" className={sectionTitle}>
             Get In Touch
           </h2>
 
-          <div className="mt-3 h-1 w-20 rounded-full bg-teal-500" />
+          <div className={sectionAccent} />
 
-          <p
-            className="mt-6 
-                max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-300"
-          >
+          <p className={contactText}>
             I&apos;m currently open to Senior Front-End, UI Engineering, and
             Design System opportunities. Whether you&apos;re hiring, building a
             product, or just want to connect, I&apos;d love to hear from you.
           </p>
 
-          {/* Contact Links - Email, LinkedIn, Github */}
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+          {/* Contact Links: Email, LinkedIn, Github */}
+          <div className={contactLinkGroup}>
             <a
               href="mailto:naheed.virk@gmail.com?subject=Portfolio Inquiry"
-              className="
-                inline-flex
-                items-center
-                justify-center
-                rounded-md
-                bg-teal-600
-                px-6
-                py-3
-                text-sm
-                font-semibold
-                text-white
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:bg-teal-700
-                hover:shadow-lg
-                focus:outline-none
-                focus:ring-2
-                focus:ring-teal-500
-                focus:ring-offset-2
-                dark:focus:ring-offset-gray-950
-                motion-reduce:transition-none
-                motion-reduce:hover:translate-y-0
-                "
+              className={`${buttonBase} ${buttonPrimary}`}
             >
               <FaEnvelope className="mr-2 h-4 w-4" />
               Email Me
@@ -99,36 +69,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit Naheed Virk LinkedIn profile"
-              className="
-                inline-flex
-                items-center
-                justify-center
-                rounded-md
-                border
-                border-gray-300
-                px-6
-                py-3
-                text-sm
-                font-semibold
-                text-gray-700
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:border-teal-600
-                hover:text-teal-600
-                hover:shadow-lg
-                focus:outline-none
-                focus:ring-2
-                focus:ring-teal-400
-                focus:ring-offset-2
-                dark:border-gray-700
-                dark:text-gray-300
-                dark:hover:border-teal-400
-                dark:hover:text-teal-400
-                dark:focus:ring-offset-gray-950
-                motion-reduce:transition-none
-                motion-reduce:hover:translate-y-0
-                "
+              className={`${buttonBase} ${buttonSecondary}`}
             >
               <FaLinkedin className="mr-2 h-4 w-4" />
               LinkedIn
@@ -140,45 +81,16 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit Naheed Virk GitHub profile"
-              className="
-                inline-flex
-                items-center
-                justify-center
-                rounded-md
-                border
-                border-gray-300
-                px-6
-                py-3
-                text-sm
-                font-semibold
-                text-gray-700
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:border-teal-600
-                hover:text-teal-600
-                hover:shadow-lg
-                focus:outline-none
-                focus:ring-2
-                focus:ring-teal-400
-                focus:ring-offset-2
-                dark:border-gray-700
-                dark:text-gray-300
-                dark:hover:border-teal-400
-                dark:hover:text-teal-400
-                dark:focus:ring-offset-gray-950
-                motion-reduce:transition-none
-                motion-reduce:hover:translate-y-0
-                "
+              className={`${buttonBase} ${buttonSecondary}`}
             >
               <FaGithub className="mr-2 h-4 w-4" />
               GitHub
             </a>
           </div>
-          <p className="mt-6 text-sm text-gray-500 dark:text-gray-400">
+          <p className={`mt-6 ${contactMeta}`}>
             I typically respond within 24–48 hours.
           </p>
-          <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+          <p className={`mt-2 ${contactMeta}`}>
             Based in Michigan, USA • Open to remote and hybrid opportunities
           </p>
         </motion.div>

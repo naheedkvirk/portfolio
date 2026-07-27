@@ -1,15 +1,25 @@
 import Image from "next/image";
 import {
-  bodyTextGray,
-  gradientGray50White,
+  // Layout
   pageContainer,
+
+  // Section
+  section,
+  sectionSpacing,
+  gradientGray50White,
+  sectionAccent,
+
+  // Typography
+  sectionTitle,
+  subsectionTitle,
+  bodyTextGray,
+  mutedText,
+
+  // About
+  skillItem,
+  skillDot,
   profileImage,
   profileImageCard,
-  section,
-  sectionAccent,
-  sectionSpacing,
-  sectionTitle,
-  skillItem,
 } from "@/lib/styles";
 
 export default function About() {
@@ -52,16 +62,14 @@ export default function About() {
             </p>
 
             <div className="mt-6">
-              <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-900 dark:text-gray-100">
-                Industry Experience
-              </h3>
+              <h3 className={subsectionTitle}>Industry Experience</h3>
 
-              <p className="mt-2 text-gray-600 dark:text-gray-300">
+              <p className={`mt-2 ${bodyTextGray}`}>
                 Healthcare • Finance • Automotive • Manufacturing • Digital
                 Publishing
               </p>
 
-              <p className="mt-2 text-sm leading-6 text-gray-500 dark:text-gray-400">
+              <p className={`mt-2 ${mutedText}`}>
                 Building enterprise applications across regulated and complex
                 business domains.
               </p>
@@ -70,10 +78,7 @@ export default function About() {
             <ul className="mt-8 space-y-4 text-gray-700 dark:text-gray-300">
               {skills.map((skill) => (
                 <li key={skill} className={skillItem}>
-                  <span
-                    aria-hidden="true"
-                    className="h-2 w-2 rounded-full bg-teal-500"
-                  />
+                  <span aria-hidden="true" className={skillDot} />
                   {skill}
                 </li>
               ))}

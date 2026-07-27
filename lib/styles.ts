@@ -79,6 +79,13 @@ export const profileImage =
 export const profileImageCard =
   "group relative h-64 w-64 overflow-hidden rounded-2xl border border-gray-200 shadow-xl transition-all duration-300 hover:border-teal-300 hover:shadow-2xl md:h-72 md:w-72 dark:border-gray-800 dark:hover:border-teal-700";
 
+export const skillDot = "h-2 w-2 rounded-full bg-teal-500";
+
+export const subsectionTitle =
+  "text-sm font-semibold uppercase tracking-wide text-gray-900 dark:text-gray-100";
+
+export const mutedText = "text-sm leading-6 text-gray-500 dark:text-gray-400";
+
 // ===============================
 // Components
 // ===============================
@@ -123,3 +130,53 @@ export const caseStudyTitle =
   "text-xl font-semibold text-gray-900 dark:text-white";
 
 export const caseStudyText = "mt-2 text-gray-600 dark:text-gray-300";
+
+export const sectionHeader = "max-w-3xl";
+
+// ===============================
+// Experience
+// ===============================
+
+export const experienceCard =
+  "relative rounded-xl pl-8 p-6 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-xl dark:hover:bg-gray-800/60 sm:pl-10";
+
+export const timelineLine =
+  "absolute left-[7px] top-6 bottom-0 z-0 w-px bg-gray-300 dark:bg-gray-700";
+
+export const timelineDot =
+  "absolute left-0 top-2 z-10 h-3 w-3 rounded-full bg-teal-600 ring-4 ring-gray-50 dark:ring-gray-900";
+
+export const currentRoleBadge =
+  "mt-3 inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-medium text-teal-700 dark:bg-teal-900/40 dark:text-teal-300";
+
+export const experienceRole =
+  "text-2xl font-semibold text-gray-900 dark:text-white";
+
+export const experienceCompany =
+  "mt-1 text-lg font-semibold text-teal-600 dark:text-teal-400";
+
+export const experienceMeta = "mt-1 text-sm text-gray-500 dark:text-gray-400";
+
+export const experienceText = "text-gray-600 dark:text-gray-300";
+
+export const achievementItem = "flex items-start gap-3";
+
+export const achievementDot = "mt-2 h-2 w-2 shrink-0 rounded-full bg-teal-500";
+
+// ===============================
+// Contact
+// ===============================
+
+export const contactCard =
+  "mx-auto max-w-3xl rounded-2xl border border-gray-200 bg-gray-50 p-8 shadow-md transition-shadow duration-300 hover:shadow-lg dark:border-gray-800 dark:bg-gray-900 sm:p-10";
+
+export const contactText =
+  "mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-300";
+
+export const contactLinkGroup =
+  "mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap";
+
+export const secondaryButton =
+  "border border-gray-300 text-gray-700 hover:border-teal-600 hover:text-teal-600 dark:border-gray-700 dark:text-gray-300 dark:hover:border-teal-400 dark:hover:text-teal-400";
+
+export const contactMeta = "text-sm text-gray-500 dark:text-gray-400";

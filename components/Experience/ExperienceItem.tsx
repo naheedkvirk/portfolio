@@ -1,6 +1,20 @@
 import { motion } from "motion/react";
 import { Experience } from "./experienceData";
 
+import {
+  achievementDot,
+  achievementItem,
+  currentRoleBadge,
+  experienceCard,
+  experienceCompany,
+  experienceMeta,
+  experienceRole,
+  experienceText,
+  technologyBadge,
+  timelineDot,
+  timelineLine,
+} from "@/lib/styles";
+
 //Props
 interface ExperienceItemProps {
   experience: Experience;
@@ -15,19 +29,7 @@ export default function ExperienceItem({
 }: ExperienceItemProps) {
   return (
     <motion.article
-      className="
-  relative
-  rounded-xl
-  pl-8
-  sm:pl-10
-  p-6
-  transition-all
-  duration-300
-  hover:-translate-y-1
-  hover:bg-white
-  hover:shadow-xl
-  dark:hover:bg-gray-800/60
-"
+      className={experienceCard}
       initial={shouldReduceMotion ? false : { opacity: 0, y: 32 }}
       whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
       viewport={{
@@ -41,74 +43,37 @@ export default function ExperienceItem({
       }}
     >
       {/* Timeline line */}
-      <div className="absolute left-[7px] top-6 bottom-0 z-0 w-px bg-gray-300 dark:bg-gray-700" />
+      <div className={timelineLine} />
 
       {/* Timeline dot */}
-      <div
-        className="
-          absolute
-          left-0
-          top-2
-          z-10
-          h-3
-          w-3
-          rounded-full
-          bg-teal-600
-          ring-4
-          ring-gray-50
-          dark:ring-gray-900
-        "
-      />
+      <div className={timelineDot} />
 
       <div className="pb-12 sm:pb-16">
         {/* Header */}
         <header>
-          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">
-            {experience.role}
-          </h3>
+          <h3 className={experienceRole}>{experience.role}</h3>
 
-          <p className="mt-1 text-lg font-semibold text-teal-600 dark:text-teal-400">
-            {experience.company}
-          </p>
+          <p className={experienceCompany}>{experience.company}</p>
 
-          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+          <p className={experienceMeta}>
             {experience.duration} • {experience.location}
           </p>
 
           {experience.current && (
-            <span
-              className="
-                mt-3
-                inline-flex
-                rounded-full
-                bg-teal-100
-                px-3
-                py-1
-                text-xs
-                font-medium
-                text-teal-700
-                dark:bg-teal-900/40
-                dark:text-teal-300
-              "
-            >
-              Current Role
-            </span>
+            <span className={currentRoleBadge}>Current Role</span>
           )}
         </header>
 
         {/* Summary */}
-        <p className="mt-5 leading-7 text-gray-600 dark:text-gray-300">
+        <p className={`mt-5 leading-7 ${experienceText}`}>
           {experience.summary}
         </p>
 
         {/* Achievements */}
-        <ul className="mt-5 space-y-2 text-gray-600 dark:text-gray-300">
+        <ul className={`mt-5 space-y-2 ${experienceText}`}>
           {experience.achievements.map((achievement) => (
-            <li key={achievement} className="flex items-start gap-3">
-              <span
-                aria-hidden="true"
-                className="mt-2 h-2 w-2 shrink-0 rounded-full bg-teal-500"
-              />
+            <li key={achievement} className={achievementItem}>
+              <span aria-hidden="true" className={achievementDot} />
               {achievement}
             </li>
           ))}
@@ -117,10 +82,7 @@ export default function ExperienceItem({
         {/* Technologies */}
         <div className="mt-6 flex flex-wrap gap-2">
           {experience.technologies.map((technology) => (
-            <span
-              key={technology}
-              className="rounded-full bg-teal-50 px-3 py-1 text-xs font-medium text-teal-700 dark:bg-teal-900/30 dark:text-teal-300"
-            >
+            <span key={technology} className={technologyBadge}>
               {technology}
             </span>
           ))}

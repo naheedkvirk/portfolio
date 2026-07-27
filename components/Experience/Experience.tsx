@@ -2,7 +2,17 @@
 import ExperienceItem from "./ExperienceItem";
 import { experiences } from "./experienceData";
 import { motion, useReducedMotion, type Variants } from "motion/react";
-import { gray50BgGray900, section, sectionSpacing } from "@/lib/styles";
+
+import {
+  bodyTextGray,
+  gray50BgGray900,
+  pageContainer,
+  section,
+  sectionAccent,
+  sectionHeader,
+  sectionSpacing,
+  sectionTitle,
+} from "@/lib/styles";
 
 const timelineVariants: Variants = {
   hidden: {},
@@ -23,24 +33,21 @@ export default function Experience() {
       aria-labelledby="experience-heading"
       className={`${section} ${sectionSpacing} ${gray50BgGray900}`}
     >
-      <div className="mx-auto max-w-7xl px-6">
+      <div className={pageContainer}>
         {/* Section Header */}
         <motion.div
-          className="max-w-3xl"
+          className={sectionHeader}
           initial={shouldReduceMotion ? false : { opacity: 0, y: 24 }}
           whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
         >
-          <h2
-            id="experience-heading"
-            className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl"
-          >
+          <h2 id="experience-heading" className={sectionTitle}>
             Experience
           </h2>
-          <div className="mt-3 h-1 w-20 rounded-full bg-teal-500" />
+          <div className={sectionAccent} />
 
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-300">
+          <p className={`mt-6 max-w-2xl text-lg leading-8 ${bodyTextGray}`}>
             Over 15 years of experience designing and developing accessible,
             responsive, and scalable web applications across healthcare,
             finance, automotive, manufacturing, and digital publishing.
