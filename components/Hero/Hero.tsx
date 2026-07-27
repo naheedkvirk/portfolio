@@ -5,7 +5,7 @@ import {
   heroLayout,
   heroSpacing,
   gradientSlateTeal,
-  heroBackground,
+  heroDarkBackground,
   pageContainer,
   contentContainer,
   textCenter,
@@ -52,7 +52,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className={`${heroLayout}${heroSpacing}  ${gradientSlateTeal} ${heroBackground}`}
+      className={`${heroLayout}${heroSpacing}  ${gradientSlateTeal} ${heroDarkBackground}`}
     >
       <div className={pageContainer}>
         <motion.div
