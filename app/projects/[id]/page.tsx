@@ -1,7 +1,30 @@
 import { notFound } from "next/navigation";
-import { getProjectById } from "@/components/Projects/projectData";
 import Link from "next/link";
 import Image from "next/image";
+
+import { getProjectById } from "@/components/Projects/projectData";
+import ProjectCaseStudy from "@/components/Projects/ProjectCaseStudy";
+
+import {
+  pageContainer,
+  backLink,
+  heroSection,
+  eyebrow,
+  title,
+  subtitle,
+  techBadgeContainer,
+  techBadge,
+  imageSection,
+  imageWrapper,
+  contentSection,
+  sectionTitle,
+  bodyText,
+  technologySection,
+  technologyContainer,
+  technologyBadge,
+  bottomNavigation,
+  bottomLink,
+} from "./styles";
 
 interface ProjectPageProps {
   params: Promise<{
@@ -13,87 +36,71 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   const { id } = await params;
 
   const project = getProjectById(Number(id));
-  console.log(project?.image);
 
   if (!project) {
     notFound();
   }
 
   return (
-    <main className="mx-auto max-w-5xl px-6 py-16">
-      {/* Back Navigation */}
-      <Link
-        href="/#projects"
-        className="
-            mb-8
-            inline-flex
-            items-center
-            rounded-md
-            bg-teal-600
-            px-5
-            py-2.5
-            text-sm
-            font-semibold
-            text-white
-            hover:bg-teal-700
-        "
-      >
+    <main className={pageContainer}>
+      <Link href="/#projects" className={backLink}>
         ← Back to Projects
       </Link>
 
-      <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
-        {project.title}
-      </h1>
+      <section className={heroSection}>
+        <p className={eyebrow}>Case Study</p>
 
-      <p className="mt-2 text-xl text-gray-600 dark:text-gray-300">
-        {project.subtitle}
-      </p>
+        <h1 className={title}>{project.title}</h1>
 
-      {project.image && (
-        <div className="mt-8 flex justify-center">
-          <div className="relative h-64 w-full max-w-3xl overflow-hidden rounded-xl shadow-lg">
-            <Image
-              src={project.image}
-              alt={project.title}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 768px"
-            />
-          </div>
+        <p className={subtitle}>{project.subtitle}</p>
+
+        <div className={techBadgeContainer}>
+          {project.technologies.map((tech) => (
+            <span key={tech} className={techBadge}>
+              {tech}
+            </span>
+          ))}
         </div>
-      )}
+      </section>
 
-      <div className="mt-10 space-y-10">
-        {project.challenge && (
-          <section>
-            <h2 className="text-2xl font-semibold">Challenge</h2>
+      <section className={imageSection}>
+        <div className={imageWrapper}>
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            priority
+            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 900px"
+          />
+        </div>
+      </section>
 
-            <p className="mt-3 text-gray-600 dark:text-gray-300">
-              {project.challenge}
-            </p>
-          </section>
-        )}
+      <section className={contentSection}>
+        <h2 className={sectionTitle}>Overview</h2>
 
-        {project.solution && (
-          <section>
-            <h2 className="text-2xl font-semibold">Solution</h2>
+        <p className={bodyText}>{project.description}</p>
+      </section>
 
-            <p className="mt-3 text-gray-600 dark:text-gray-300">
-              {project.solution}
-            </p>
-          </section>
-        )}
+      <ProjectCaseStudy project={project} />
 
-        {project.impact && (
-          <section>
-            <h2 className="text-2xl font-semibold">Impact</h2>
+      <section className={technologySection}>
+        <h2 className={sectionTitle}>Technology Stack</h2>
 
-            <p className="mt-3 text-gray-600 dark:text-gray-300">
-              {project.impact}
-            </p>
-          </section>
-        )}
-      </div>
+        <div className={technologyContainer}>
+          {project.technologies.map((tech) => (
+            <span key={tech} className={technologyBadge}>
+              {tech}
+            </span>
+          ))}
+        </div>
+      </section>
+
+      <section className={bottomNavigation}>
+        <Link href="/#projects" className={bottomLink}>
+          ← View all projects
+        </Link>
+      </section>
     </main>
   );
 }

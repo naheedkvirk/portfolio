@@ -32,7 +32,9 @@ export default function About() {
     "Tailwind CSS",
     "Accessibility (WCAG)",
     "Responsive Web Design",
+    "Azure DevOps & Enterprise Workflows",
   ];
+
   return (
     <section
       id="about"
@@ -46,36 +48,44 @@ export default function About() {
             <h2 id="about-heading" className={sectionTitle}>
               About Me
             </h2>
+
             <div className={sectionAccent} />
 
             <p className={`mt-6 max-w-xl text-lg leading-8 ${bodyTextGray}`}>
               I&apos;m a Senior UI/UX Front-End Developer with 15+ years of
-              experience designing and building enterprise web applications that
-              are accessible, scalable, and user-centered. I enjoy transforming
+              experience designing and developing accessible, scalable, and
+              user-centered web applications. I specialize in transforming
               complex business requirements into intuitive digital experiences
-              using modern front-end technologies.
+              through thoughtful design and modern front-end engineering.
             </p>
 
             <p className={`mt-4 max-w-xl leading-8 ${bodyTextGray}`}>
-              I specialize in React, Next.js, TypeScript, Material UI,
-              Storybook, and Tailwind CSS, with expertise in design systems,
-              reusable component libraries, accessibility (WCAG), and
-              performance optimization. I focus on creating maintainable
-              front-end architectures that deliver exceptional user experiences
-              across enterprise applications.
+              My expertise includes React, Next.js, TypeScript, Material UI,
+              Storybook, and Tailwind CSS, with a strong focus on design
+              systems, reusable component libraries, accessibility (WCAG), and
+              responsive application development. I build maintainable front-end
+              architectures that improve consistency, collaboration, and product
+              delivery across enterprise applications.
+            </p>
+
+            <p className={`mt-4 max-w-xl leading-8 ${bodyTextGray}`}>
+              I have experience working with cross-functional teams including UX
+              designers, product managers, and engineers using enterprise
+              development workflows and tools such as Azure DevOps, Git, and
+              Agile practices.
             </p>
 
             <div className="mt-6">
               <h3 className={subsectionTitle}>Industry Experience</h3>
 
               <p className={`mt-2 ${bodyTextGray}`}>
-                Automotive • Banking • Travel Insurance • Academic • Digital
-                Publishing
+                Automotive • Banking • Travel Insurance • Academic Search •
+                Digital Publishing • Enterprise Applications
               </p>
 
               <p className={`mt-2 ${mutedText}`}>
-                Building enterprise applications across complex, regulated
-                industries.
+                Building accessible and scalable user experiences across complex
+                enterprise environments.
               </p>
             </div>
 
@@ -83,6 +93,7 @@ export default function About() {
               {skills.map((skill) => (
                 <li key={skill} className={skillItem}>
                   <span aria-hidden="true" className={skillDot} />
+
                   {skill}
                 </li>
               ))}
