@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { navigation } from "@/data/navigation";
+import { navigation } from "@/content/navigation";
 import { FaFileAlt, FaBars, FaTimes } from "react-icons/fa";
 import {
   brandLink,

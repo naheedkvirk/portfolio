@@ -1,6 +1,7 @@
 "use client";
 import { motion, useReducedMotion } from "motion/react";
 import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { contact } from "@/content/content";
 import {
   buttonBase,
   buttonPrimary,
@@ -42,57 +43,49 @@ export default function Contact() {
           }}
         >
           <h2 id="contact-heading" className={sectionTitle}>
-            Get In Touch
+            {contact.title}
           </h2>
 
           <div className={sectionAccent} />
 
-          <p className={contactText}>
-            I&apos;m currently open to Senior Front-End, UI Engineering, and
-            Design System opportunities. Whether you&apos;re hiring, building a
-            product, or just want to connect, I&apos;d love to hear from you.
-          </p>
+          <p className={contactText}>{contact.description}</p>
 
           {/* Contact Links: Email, LinkedIn, Github */}
           <div className={contactLinkGroup}>
             <a
-              href="mailto:naheed.virk@gmail.com?subject=Portfolio Inquiry"
+              href={contact.buttons.email.href}
               className={`${buttonBase} ${buttonPrimary}`}
             >
               <FaEnvelope className="mr-2 h-4 w-4" />
-              Email Me
+              {contact.buttons.email.label}
             </a>
 
             {/* LinkedIn */}
             <a
-              href="https://www.linkedin.com/in/naheed-virk/"
+              href={contact.buttons.linkedin.href}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit Naheed Virk LinkedIn profile"
               className={`${buttonBase} ${buttonSecondary}`}
             >
               <FaLinkedin className="mr-2 h-4 w-4" />
-              LinkedIn
+              {contact.buttons.linkedin.label}
             </a>
 
             {/* Github */}
             <a
-              href="https://github.com/naheedkvirk/"
+              href={contact.buttons.github.href}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit Naheed Virk GitHub profile"
               className={`${buttonBase} ${buttonSecondary}`}
             >
               <FaGithub className="mr-2 h-4 w-4" />
-              GitHub
+              {contact.buttons.github.label}
             </a>
           </div>
-          <p className={`mt-6 ${contactMeta}`}>
-            I typically respond within 24–48 hours.
-          </p>
-          <p className={`mt-2 ${contactMeta}`}>
-            Based in Michigan, USA • Open to remote and hybrid opportunities
-          </p>
+          <p className={`mt-6 ${contactMeta}`}>{contact.footer.responseTime}</p>
+          <p className={`mt-2 ${contactMeta}`}>{contact.footer.location}</p>
         </motion.div>
       </div>
     </section>

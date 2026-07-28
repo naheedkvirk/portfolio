@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { about } from "@/content/content";
 import {
   // Layout
   pageContainer,
@@ -23,18 +24,6 @@ import {
 } from "@/lib/styles";
 
 export default function About() {
-  const skills = [
-    "React & Next.js",
-    "TypeScript",
-    "Material UI",
-    "Storybook",
-    "Design Systems & Component Libraries",
-    "Tailwind CSS",
-    "Accessibility (WCAG)",
-    "Responsive Web Design",
-    "Azure DevOps & Enterprise Workflows",
-  ];
-
   return (
     <section
       id="about"
@@ -46,54 +35,42 @@ export default function About() {
           {/* Left Column */}
           <div>
             <h2 id="about-heading" className={sectionTitle}>
-              About Me
+              {about.title}
             </h2>
 
             <div className={sectionAccent} />
 
             <p className={`mt-6 max-w-xl text-lg leading-8 ${bodyTextGray}`}>
-              I&apos;m a Senior UI/UX Front-End Developer with 15+ years of
-              experience designing and developing accessible, scalable, and
-              user-centered web applications. I specialize in transforming
-              complex business requirements into intuitive digital experiences
-              through thoughtful design and modern front-end engineering.
+              {about.paragraphs[0]}
             </p>
 
-            <p className={`mt-4 max-w-xl leading-8 ${bodyTextGray}`}>
-              My expertise includes React, Next.js, TypeScript, Material UI,
-              Storybook, and Tailwind CSS, with a strong focus on design
-              systems, reusable component libraries, accessibility (WCAG), and
-              responsive application development. I build maintainable front-end
-              architectures that improve consistency, collaboration, and product
-              delivery across enterprise applications.
-            </p>
-
-            <p className={`mt-4 max-w-xl leading-8 ${bodyTextGray}`}>
-              I have experience working with cross-functional teams including UX
-              designers, product managers, and engineers using enterprise
-              development workflows and tools such as Azure DevOps, Git, and
-              Agile practices.
-            </p>
+            {about.paragraphs.slice(1).map((paragraph) => (
+              <p
+                key={paragraph}
+                className={`mt-4 max-w-xl leading-8 ${bodyTextGray}`}
+              >
+                {paragraph}
+              </p>
+            ))}
 
             <div className="mt-6">
-              <h3 className={subsectionTitle}>Industry Experience</h3>
+              <h3 className={subsectionTitle}>
+                {about.industryExperience.title}
+              </h3>
 
               <p className={`mt-2 ${bodyTextGray}`}>
-                Automotive • Banking • Travel Insurance • Academic Search •
-                Digital Publishing • Enterprise Applications
+                {about.industryExperience.industries}
               </p>
 
               <p className={`mt-2 ${mutedText}`}>
-                Building accessible and scalable user experiences across complex
-                enterprise environments.
+                {about.industryExperience.description}
               </p>
             </div>
 
             <ul className="mt-8 space-y-4 text-gray-700 dark:text-gray-300">
-              {skills.map((skill) => (
+              {about.skills.map((skill) => (
                 <li key={skill} className={skillItem}>
                   <span aria-hidden="true" className={skillDot} />
-
                   {skill}
                 </li>
               ))}

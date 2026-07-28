@@ -1,5 +1,7 @@
+import { projectsContent } from "@/content/content";
 import ProjectCard from "./ProjectCard";
 import { projects } from "./projectData";
+
 import {
   pageContainer,
   section,
@@ -21,18 +23,13 @@ export default function Projects() {
         {/* Section Header */}
         <div className="max-w-3xl">
           <h2 id="projects-heading" className={sectionTitle}>
-            Projects
+            {projectsContent.title}
           </h2>
 
           <div className={sectionAccent} />
 
           <p className={`mt-6 max-w-2xl text-lg leading-8 ${bodyTextGray}`}>
-            A collection of enterprise and personal projects demonstrating my
-            experience designing and building scalable, accessible, and
-            user-centered web applications. From design systems and reusable
-            component libraries to customer-facing enterprise platforms, each
-            project reflects a focus on clean architecture, performance, and
-            exceptional user experience.
+            {projectsContent.description}
           </p>
         </div>
 

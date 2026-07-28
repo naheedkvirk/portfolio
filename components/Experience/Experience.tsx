@@ -13,6 +13,7 @@ import {
   sectionSpacing,
   sectionTitle,
 } from "@/lib/styles";
+import { experienceContent } from "@/content/content";
 
 const timelineVariants: Variants = {
   hidden: {},
@@ -43,14 +44,12 @@ export default function Experience() {
           transition={{ duration: 0.6 }}
         >
           <h2 id="experience-heading" className={sectionTitle}>
-            Experience
+            {experienceContent.title}
           </h2>
           <div className={sectionAccent} />
 
           <p className={`mt-6 max-w-2xl text-lg leading-8 ${bodyTextGray}`}>
-            Over 15 years of experience designing and developing accessible,
-            responsive, and scalable web applications across healthcare,
-            finance, automotive, manufacturing, and digital publishing.
+            {experienceContent.description}
           </p>
         </motion.div>
 
