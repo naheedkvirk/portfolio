@@ -217,3 +217,18 @@ export const mobileResumeButton =
 // ===============================
 export const footerBg =
   "bg-gray-50 border-t border-gray-200 dark:bg-gray-900 dark:border-gray-800";
+
+// Footer
+export const footerContainer = "py-8 sm:py-10";
+
+export const footerContent = "text-center";
+
+export const footerTitle =
+  "text-xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-2xl";
+
+export const footerDescription =
+  "mx-auto mt-5 max-w-xl text-base leading-7 text-gray-600 dark:text-gray-300";
+
+export const footerMeta = "mt-8 text-sm text-gray-500 dark:text-gray-400";
+
+export const footerBuiltWith = "mt-2 text-sm text-gray-500 dark:text-gray-400";
