@@ -87,3 +87,15 @@ export const contact = {
       "Based in Michigan, USA • Open to remote and hybrid opportunities",
   },
 };
+
+//Footer
+export const footer = {
+  title: "Thanks for visiting.",
+
+  description:
+    "Let's build accessible, scalable, and meaningful digital experiences together.",
+
+  copyright: `© ${new Date().getFullYear()} Naheed Virk`,
+
+  builtWith: "Built with Next.js, TypeScript, Tailwind CSS, and Motion.",
+};

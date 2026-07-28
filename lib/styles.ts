@@ -168,8 +168,7 @@ export const achievementDot = "mt-2 h-2 w-2 shrink-0 rounded-full bg-teal-500";
 // ===============================
 
 export const contactCard =
-  "mx-auto max-w-3xl rounded-2xl border border-gray-200 bg-gray-50 p-8 shadow-md transition-shadow duration-300 hover:shadow-lg dark:border-gray-800 dark:bg-gray-900 sm:p-10";
-
+  "mx-auto max-w-3xl rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition-shadow duration-300 hover:shadow-md dark:border-gray-800 dark:bg-gray-950 sm:p-10";
 export const contactText =
   "mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-300";
 
@@ -212,3 +211,9 @@ export const mobileNavLink =
 
 export const mobileResumeButton =
   "inline-flex items-center gap-2 rounded-md bg-teal-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-teal-700";
+
+// ===============================
+// Footer
+// ===============================
+export const footerBg =
+  "bg-gray-50 border-t border-gray-200 dark:bg-gray-900 dark:border-gray-800";
