@@ -1,73 +1,94 @@
 // src/content.ts
 
+// ===============================
+// Hero
+// ===============================
 export const hero = {
-  tealBadge: "15+ Years Experience",
-  eyebrow: "Hi, my name is",
+  tealBadge: "15+ Years Enterprise Front-End Experience",
+
+  eyebrow: "Hi, I'm",
+
   name: "Naheed Virk",
-  title: "Senior UI/UX Front-End Developer",
+
+  title: "Senior Front-End Engineer / UI/UX Developer",
+
   description:
-    "I design and build accessible, scalable, and high-performance enterprise web applications using React, Next.js, TypeScript, and modern front-end technologies. With over 15 years of experience, I specialize in design systems, reusable component libraries, and creating intuitive user experiences across enterprise platforms.",
+    "I design and develop scalable, accessible, and high-performance enterprise web applications using React, Next.js, TypeScript, and modern front-end technologies. With 15+ years of experience across healthcare, finance, automotive, insurance, manufacturing, and digital publishing, I specialize in design systems, reusable component libraries, and creating intuitive user experiences.",
+
   primaryButton: "View My Work",
+
   secondaryButton: "Contact Me",
 };
 
+// ===============================
+// About
+// ===============================
 export const about = {
   title: "About Me",
 
   paragraphs: [
-    "I'm a Senior UI/UX Front-End Developer with 15+ years of experience designing and developing accessible, scalable, and user-centered web applications. I specialize in transforming complex business requirements into intuitive digital experiences through thoughtful design and modern front-end engineering.",
+    "I'm a Senior Front-End Engineer / UI/UX Developer with 15+ years of experience designing and developing accessible, scalable, and high-performance web applications for enterprise organizations. I specialize in transforming complex business requirements into intuitive digital experiences through modern front-end engineering, thoughtful design, and user-centered solutions.",
 
-    "My expertise includes React, Next.js, TypeScript, Material UI, Storybook, and Tailwind CSS, with a strong focus on design systems, reusable component libraries, accessibility (WCAG), and responsive application development. I build maintainable front-end architectures that improve consistency, collaboration, and product delivery across enterprise applications.",
+    "My expertise includes React, Next.js, TypeScript, JavaScript (ES6+), Material UI, Storybook, and Tailwind CSS, with a strong focus on enterprise design systems, reusable component libraries, accessibility (WCAG), responsive development, and maintainable front-end architectures that improve consistency, collaboration, and product delivery.",
 
-    "I have experience working with cross-functional teams including UX designers, product managers, and engineers using enterprise development workflows and tools such as Azure DevOps, Git, and Agile practices.",
+    "I collaborate with UX designers, product managers, and engineering teams using Agile methodologies and enterprise workflows. My experience includes Azure DevOps, Git, CI/CD practices, automated testing, and component-driven development to deliver reliable, scalable digital products.",
   ],
 
   industryExperience: {
     title: "Industry Experience",
     industries:
-      "Automotive • Banking • Travel Insurance • Academic Search • Digital Publishing • Enterprise Applications",
+      "Automotive • Banking & Finance • Healthcare & Insurance • Manufacturing • Academic Search • Digital Publishing • Enterprise Applications",
     description:
-      "Building accessible and scalable user experiences across complex enterprise environments.",
+      "Building accessible, scalable, and high-performance user experiences across complex enterprise environments.",
   },
 
   skills: [
     "React & Next.js",
-    "TypeScript",
+    "TypeScript & JavaScript (ES6+)",
     "Material UI",
     "Storybook",
     "Design Systems & Component Libraries",
     "Tailwind CSS",
     "Accessibility (WCAG)",
     "Responsive Web Design",
+    "Performance Optimization & Testing",
     "Azure DevOps & Enterprise Workflows",
   ],
 };
 
+// ===============================
+// Projects
+// ===============================
 export const projectsContent = {
   title: "Projects",
 
   description:
-    "A collection of enterprise and personal projects demonstrating my experience designing and building scalable, accessible, and user-centered web applications. From design systems and reusable component libraries to customer-facing enterprise platforms, each project reflects a focus on clean architecture, performance, and exceptional user experience.",
+    "A collection of enterprise and personal projects showcasing my experience designing and developing scalable, accessible, and high-performance web applications. These projects demonstrate my expertise in React, Next.js, design systems, reusable component libraries, and modern front-end architecture while focusing on maintainability, performance, and intuitive user experiences.",
 };
 
+// ===============================
+// Experience
+// ===============================
 export const experienceContent = {
   title: "Experience",
 
   description:
-    "Over 15 years of experience designing and developing accessible, responsive, and scalable web applications across healthcare, finance, automotive, manufacturing, and digital publishing.",
+    "15+ years of experience designing and developing scalable, accessible, and high-performance web applications across healthcare, finance, automotive, insurance, manufacturing, and digital publishing. Experienced in building enterprise applications, design systems, reusable component libraries, and modern front-end architectures using React, Next.js, TypeScript, and industry best practices.",
 };
 
+// ===============================
 // Contact
+// ===============================
 export const contact = {
   title: "Get In Touch",
 
   description:
-    "I'm currently open to Senior Front-End, UI Engineering, and Design System opportunities. Whether you're hiring, building a product, or just want to connect, I'd love to hear from you.",
+    "I'm currently open to Senior Front-End Engineer, UI Engineering, and Design System opportunities. If you're looking to build scalable, accessible, and high-quality web applications, I'd love to connect.",
 
   buttons: {
     email: {
       label: "Email Me",
-      href: "mailto:naheed.virk@gmail.com?subject=Portfolio Inquiry",
+      href: "mailto:naheedvirk786@gmail.com?subject=Portfolio Inquiry",
     },
 
     linkedin: {
@@ -88,12 +109,14 @@ export const contact = {
   },
 };
 
-//Footer
+// ===============================
+// Footer
+// ===============================
 export const footer = {
   title: "Thanks for visiting.",
 
   description:
-    "Let's build accessible, scalable, and meaningful digital experiences together.",
+    "Building accessible, scalable, and high-performance digital experiences through modern front-end engineering.",
 
   copyright: `© ${new Date().getFullYear()} Naheed Virk`,
 

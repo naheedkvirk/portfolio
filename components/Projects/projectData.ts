@@ -57,9 +57,9 @@ export const projects: Project[] = [
   {
     id: 1,
     title: "Enterprise Design System",
-    subtitle: "Reusable React Components • Storybook • Material UI",
+    subtitle: "Enterprise Design System • React Components • Storybook",
     description:
-      "Designed and developed a scalable enterprise design system with reusable React components, shared UI patterns, and comprehensive Storybook documentation. Built accessible, themeable components that enabled development teams to deliver consistent, high-quality user experiences across multiple enterprise applications while accelerating development and reducing code duplication.",
+      "Designed and developed an enterprise design system with reusable React components, shared UI patterns, and comprehensive Storybook documentation. Built accessible, themeable components using TypeScript and Material UI that improved consistency, collaboration, and development efficiency across multiple enterprise applications.",
     technologies: [
       "React",
       "TypeScript",
@@ -88,7 +88,7 @@ export const projects: Project[] = [
         "The organization needed a centralized design system to support multiple enterprise applications while maintaining consistent user experiences, accessibility standards, and efficient development workflows.",
 
       role: [
-        "Senior UI/UX Front-End Developer",
+        "Senior Front-End Engineer / UI/UX Developer",
         "Component architecture and implementation",
         "Design-to-code collaboration",
         "Accessibility and usability improvements",
@@ -161,7 +161,7 @@ export const projects: Project[] = [
   {
     id: 2,
     title: "Enterprise Banking Platform",
-    subtitle: "Digital Banking • Responsive Web Applications",
+    subtitle: "Financial Applications • React • Angular • Cloud",
     description:
       "Developed secure, responsive web applications for a global banking platform, creating intuitive user experiences for financial services. Collaborated with UX designers to build accessible interfaces, optimized application performance, and implemented scalable front-end architecture using modern JavaScript frameworks and cloud-native development practices.",
     technologies: [
@@ -182,13 +182,13 @@ export const projects: Project[] = [
   {
     id: 3,
     title: "Travel Insurance Platform",
-    subtitle: "Customer Portal • Policy Management",
+    subtitle: "Healthcare Insurance • Customer Portal • React/Angular",
     description:
       "Built and enhanced customer-facing web applications for a global travel medical insurance provider. Developed reusable Angular components, improved application performance, and delivered responsive, accessible interfaces that supported policy management, member services, and digital self-service experiences.",
     technologies: [
       "Angular",
       "Angular JS",
-      "Typesctipt",
+      "Typescript",
       "JavaScript",
       "HTML",
       "CSS",
@@ -199,7 +199,7 @@ export const projects: Project[] = [
   {
     id: 4,
     title: "Enterprise Front-End Framework",
-    subtitle: "Angular Framework • Internal Developer Platform",
+    subtitle: "Automotive Enterprise Platform • Angular Framework",
     description:
       "Developed and maintained a scalable front-end framework that enabled internal engineering teams to build enterprise web applications more efficiently. Created reusable Angular components, modernized legacy applications, and established a maintainable architecture with state management, routing, API integration, and automated testing.",
     technologies: [
@@ -217,7 +217,7 @@ export const projects: Project[] = [
   {
     id: 5,
     title: "Digital Research Platform",
-    subtitle: "Academic Search • Content Discovery",
+    subtitle: "Academic Search • Digital Publishing • Accessibility",
     description:
       "Designed and developed intuitive search and discovery experiences for academic research and professional learning platforms. Improved content discovery, accessibility, responsive design, and usability through user-centered interfaces that helped researchers, students, and professionals efficiently access digital knowledge resources.",
     technologies: [
@@ -271,10 +271,10 @@ export const projects: Project[] = [
 
     caseStudy: {
       overview:
-        "The goal was to create a modern portfolio experience that represents my background as a Senior UI/UX Front-End Developer while demonstrating current React and Next.js development practices. The site was designed to balance visual design, performance, accessibility, and maintainability.",
+        "The goal was to create a modern portfolio experience that represents my background as a Senior Front-End Engineer / UI/UX Developer while demonstrating current React and Next.js development practices. The site was designed to balance visual design, performance, accessibility, and maintainability.",
 
       role: [
-        "Senior UI/UX Front-End Developer",
+        "Senior Front-End Engineer / UI/UX Developer",
         "UX strategy and interface design",
         "Frontend architecture and implementation",
         "Accessibility and responsive design implementation",
